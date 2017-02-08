@@ -1,0 +1,5970 @@
+/*
+ * Copyright 1995-2012 Ellucian Company L.P. and its affiliates. 
+ */
+/* $Id: //Tuxedo/RELEASE/Product/webroot/DGW_Style.css#6 $ */
+/*==========================================================================*/
+/* When the page is printed the alternate styles within the "media" section */
+/* at the bottom of this file will control how the page prints.             */
+/*==========================================================================*/
+/*	color: 660000 ~ dark-red  					-- 5C798F
+ color: E3E3B3 ~ middle brown/grey				-- B3B3B3
+ color: 9E2828 ~ dark beige					-- F8F8F8
+ color: F4F4D3 ~ beige						-- efefef
+ /*
+ ==========================================================================*/
+/*
+ Colors:
+ B3BEC7 - light blue
+ 5C798F - medium blue (sungard logo)
+ 415D72 - darker blue
+ 5B93BE - bright blue
+ ddd - BorderLight
+ 
+ efefef - silverish grey
+ 555555 - dark grey
+ 
+ #006699 = #888888
+ #003366 = #415D72
+ 
+ */
+
+tr.bgLight100:hover, tr.bgLight0:hover, tr.bgLight98:hover, tr.bgLight99:hover {
+    background-color: rgba(0, 250, 100, .35);
+}
+.courseLink, .courseapplieddatadiscnum {
+   text-decoration:underline;
+   cursor:pointer;
+}
+
+.courseLink:hover, .courseapplieddatadiscnum:hover {
+   color:blue;
+}
+
+body
+{
+   background: #fff;
+   margin: 0;
+   padding: 0;
+   color: #000;
+   font: x-small / 1.5em helvetica, helvetica, arial, sans-serif;
+   voice-family: "\"}\"";
+   voice-family: inherit;
+   font-family: helvetica, arial, sans-serif;
+   font-size: small;
+}
+
+html > body
+{
+   font-size: small;
+}
+
+form
+{
+   margin: 0;
+}
+
+input
+{
+   font-size: 10pt;
+   font-family: Tahoma, Helvetica, sans-serif;
+   color: #555;
+   padding: 2px;
+   border-color: #999 #ddd #ddd #999;
+   border-style: solid;
+   border-width: 1px;
+   height: 23px;
+}
+
+input.myRadio
+{
+   border-width: 0px;
+   height: 18px;
+}
+
+input.PlannerRadio
+{
+   border-width: 0px;
+   height: 12px;
+}
+
+input.myCheckbox
+{
+   border-width: 0px;
+   height: 18px;
+}
+
+/* This syntax does not work in IE6
+ input[type="radio"], input[type="checkbox"]
+ {
+ border-width:0px;
+ height: 18px;
+ }
+ */
+input[type =
+"radio"]
+{
+   font-size: 10px;
+   vertical-align: middle;
+}
+
+textarea
+{
+   font-size: 10pt;
+   font-family: Tahoma, Helvetica, sans-serif;
+   color: #555;
+   padding: 2px;
+   border-color: #999 #ddd #ddd #999;
+   border-style: solid;
+   border-width: 1px;
+}
+
+td
+{
+   font-family: helvetica, helvetica, arial, sans-serif;
+   font-size: 10pt;
+}
+
+th
+{
+   font-family: helvetica, helvetica, arial, sans-serif;
+   font-size: 10pt;
+}
+
+a
+{
+   background: transparent;
+   text-decoration: none;
+   color: #003659;
+}
+
+a:link
+{
+   background: transparent;
+   text-decoration: none;
+}
+
+a:visited
+{
+   background: transparent;
+   text-decoration: none;
+}
+
+a:active
+{
+   background: transparent;
+   text-decoration: none;
+}
+
+a:hover
+{
+   background: transparent;
+   /*text-decoration: underline;*/
+}
+
+.GeneralHeader
+{
+   background-color: #ffffff; /*C.1a was 660000*/ /* D02 was 5C798F */
+   background-image: url("common/header-background.gif");
+   background-repeat: no-repeat;
+}
+
+.TreqHeader
+{
+   background-color: #ffffff; /*C.1a was 660000*/ /* D02 was 5C798F */
+   background-image: url("common/header-background.gif");
+   background-repeat: no-repeat;
+}
+
+.Inner
+{
+   background-color: #fff;
+   padding-left: 2px;
+   padding-right: 2px;
+   border-spacing: 3px;
+}
+
+.LinkTableTitle
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: bold;
+   color: #999; /*D02 was 000000*/;
+   background-color: #B3BEC7; /*C.1a was E3E3B3*/ /*D02 was F8F8F8*/
+   white-space: nowrap;
+   width: 3%;
+   text-align: center;
+   padding-top: 0px;
+   padding-right: 8px;
+   padding-left: 8px;
+   border-left: solid 1px #90A0AD;
+   border-right: solid 3px #fff;
+   border-top: solid 1px #90A0AD;
+   border-bottom: solid 0px #fff;
+   /*
+    */
+}
+
+.StuContextTable td, .StuContextTable th
+{
+   padding-left: 5;
+}
+
+/* left and right borders style: */
+/*
+ .Inner
+ {
+ border-top:solid 3px #fff;
+ background-color:#fff;
+ padding-left:0px;
+ padding-right:0px;
+ border-spacing:0px;
+ border-left:solid 1px #B3BEC7;
+ border-right:solid 1px #B3BEC7;
+ height:9px;
+ 
+ }
+ .LinkTableTitle {
+ font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+ font-size: 9pt;
+ font-weight: bold;
+ color: #999;
+ background-color: #fff;
+ white-space: nowrap;
+ width: 3%;
+ text-align:center;
+ padding-top:0px;
+ padding-right: 8px;
+ padding-left: 8px;
+ border-left:solid 1px #B3BEC7;
+ border-right:solid 1px #B3BEC7;
+ border-top:solid 0px #90A0AD;
+ border-bottom:solid 0px #fff;
+ }
+ */
+.LoginDark
+{
+   background-color: #5C798F; /*C.1a was 660000*/
+   xxbackground-image: url("common/header-background.gif");
+   background-repeat: no-repeat;
+}
+
+.LoginLight
+{
+   background-color: #fff; /*C.1a was E3E3B3*/;
+}
+
+.FooterBackground
+{
+   background-color: #5C798F; /*C.1a was 660000*/
+}
+
+.FrameBackground
+{
+   background-color: #fff; /*C.1a was E3E3B3*/;
+}
+
+.MiddleBackground
+{
+   background-color: #5C798F;
+}
+
+.Banner-background {
+    background-image:url('Images_DG2/degreeWorks_2005_2line.jpg');
+    background-color: #B5C2D3;
+    background-repeat: repeat-y;
+}
+
+.GeneralButton
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: bold;
+   color: #5C798F; /*C.1a was 660000*/
+   background-color: #bbb;
+   text-align: center;
+   padding-left: 8px;
+   padding-right: 8px;
+   background-image: url("common/bg-button.gif");
+   /* background-image:url("common/bg-button-hover.gif"); */
+   border: double 3px #ffffff;
+   height: 26px;
+   background-position: center center;
+}
+
+/* Using html>body child selector is a trick to hide css from IE6- */
+html > body .GeneralButton
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: bold;
+   color: #5C798F; /*C.1a was 660000*/
+   background-color: #bbb;
+   text-align: center;
+   padding-left: 8px;
+   padding-right: 8px;
+   background-image: url("common/bg-button.gif");
+   /* background-image:url("common/bg-button-hover.gif"); */
+   border: single 1px #666666;
+   height: 26px;
+}
+
+html > body .GeneralButton:hover
+{
+   background-image: url("common/bg-button-hover.gif");
+}
+
+.WaitingMessage
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   background-color: #fff;
+}
+
+.ContextBackground
+{
+   background-color: #fff; /*D02 was fff*/
+   background-image: url("common/bg-context.gif");
+   background-repeat: repeat-x;
+   background-position: top;
+}
+
+.StuContextBackground
+{
+   background-color: #F8F8F8; /*C.1a was 9E2828*/
+}
+
+.ExceptionManagementHeader
+{
+   background-color: #5C798F; /*C.1a was 660000*/
+}
+
+.ExceptionManagementContext
+{
+   background-color: #fff;
+}
+
+.ExceptionManagementReport
+{
+   background-color: #FFFFFF;
+}
+
+.ExceptionManagementSearch
+{
+   background-color: #FFFFFF;
+}
+
+.TabBody
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   background-color: #fff;
+}
+
+.TabTableBodyBottom
+{
+   background-color: #F8F8F8; /*C.1a was 9E2828*/;
+}
+
+.TabTableBody
+{
+}
+
+.AuditBackgroundColor
+{
+   background-color: #FFFFFF;
+}
+
+.LookAheadBackground
+{
+   background-color: #fff;
+}
+
+.NotesBackground
+{
+   background-color: #FFFFFF;
+}
+
+.PetitionsBackground
+{
+   background-color: #FFFFFF;
+}
+
+.PlannerButtonFrame
+{
+   background-color: #5C798F; /*C.1a was 660000*/
+}
+
+.StudentContext
+{
+   background-color: #fff;
+}
+
+.ComplexSearchFrame
+{
+   background-color: #efefef;
+}
+
+.ComplexSearchTop
+{
+   background-color: #5C798F; /*C.1a was 660000*/
+}
+
+.ComplexSearchResult
+{
+   background-color: #5C798F; /*C.1a was 660000*/
+}
+
+.ErrorMessage
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 10pt;
+   font-weight: bold;
+   color: #000000;
+   background-color: #F8F8F8;
+   width: 100%;
+   text-align: center;
+   padding-right: 8px;
+   padding-left: 8px;
+}
+
+.WhatIfBody
+{
+   background-color: #fff;
+}
+
+.FrontPage
+{
+   background-color: #fff; /*C.1a was E3E3B3*/;
+}
+
+.ExceptionEntry
+{
+   background-color: #fff; /*C.1a was E3E3B3*/;
+}
+
+.PetitionEntry
+{
+   background-color: #fff; /*C.1a was E3E3B3*/;
+}
+
+.Templatelabel1
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 16pt;
+   font-weight: none;
+   color: #5C798F;
+   text-align: right;
+}
+
+.Templatelabel2
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 16pt;
+   font-weight: none;
+   font-style: none;
+   color: #5C798F;
+   text-align: left;
+}
+
+.TemplateHeader
+{
+   background-color: #fff; /*C.1a was E3E3B3*/;
+}
+
+.TemplateBackground
+{
+   background-color: #fff; /*C.1a was E3E3B3*/;
+}
+
+.FrontPage
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   background-color: #fff; /*C.1a was E3E3B3*/;
+}
+
+.FrontPageTable
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   background-color: #fff; /*C.1a was E3E3B3*/;
+   font-weight: bold;
+   color: #000000;
+}
+
+.AuditOptions
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9px;
+   font-weight: normal;
+   color: #000000;
+   white-space: nowrap;
+   text-align: left;
+   vertical-align: middle;
+   border: solid 0px white;
+   height: 18px;
+}
+
+.TreqerTransferSchoolLabel
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 14pt;
+   font-weight: bold;
+   color: #5C798F;
+}
+
+.TreqerAltColor1
+{
+   background-color: #D2E2EE;
+}
+
+.TreqerAltColor2
+{
+   background-color: #EFEFEF;
+}
+
+.TreqerTransferSchoolText
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 10pt;
+   font-weight: normal;
+   color: #5C798F;
+   line-height: 11pt;
+}
+
+.TreqerTransferCourseList
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 12pt;
+   font-weight: bold;
+   color: #000066;
+}
+
+.TreqerTransferCourseHeader
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 10pt;
+   font-weight: normal;
+   color: #000066;
+}
+
+.TreqerTransferCourseInstitution
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 14pt;
+   font-weight: bold;
+   color: #FFFFFF;
+   background-color: #5C798F;
+   display: block;
+   padding-left: 2;
+}
+
+.TreqerTransferError
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 12pt;
+   font-weight: normal;
+   color: #FF0000;
+}
+
+.TreqerCourseKey
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: bold;
+   color: #000066;
+}
+
+.TreqerCourseTitle
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: normal;
+   color: #000066;
+}
+
+.TreqerResultsTitle
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 16pt;
+   font-weight: bold;
+   color: #000066;
+   background-color: #B3BEC7;
+   display: block;
+   xmargin: 10px 1% 5px auto;
+   border-style: none;
+}
+
+.TreqerResultsBorder
+{
+   border-color: #5C798F;
+   border-width: 2px;
+   border-spacing:;
+   border-style: outset;
+   border-collapse: collapse;
+   xbackground-color:
+   white;
+}
+
+.TreqerResultsHeaderText
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 10pt;
+   font-weight: normal;
+   color: #5C798F;
+}
+
+.TreqerResultsInstitutionHeader
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 10pt;
+   font-weight: bold;
+   color: #5C798F;
+}
+
+.TreqerArticResultsInstitution
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 14pt;
+   font-weight: bold;
+   color: #FFFFFF;
+   background-color: #5C798F;
+   display: block;
+}
+
+.TreqerCourseGradeCredits
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: normal;
+   color: #000066;
+}
+
+.TreqerLeftoverTitle
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 14pt;
+   font-weight: bold;
+   color: #000066;
+}
+
+.TreqerLeftoverTaken
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: normal;
+   color: #000066;
+}
+
+.TreqerLeftoverReason
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: normal;
+   color: #000066;
+   text-decoration: italic;
+   font-weight: bold;
+}
+
+.TreqerDuplicateLabel
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: normal;
+   color: #000066;
+   text-decoration: italic;
+   font-weight: bold;
+}
+
+.TreqerViewResultsLink
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: normal;
+   color: #000066;
+}
+
+.TreqerSelect
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: bold;
+   color: #5C798F;
+   width: 250px;
+   height: 22px;
+   text-align: left;
+   padding-left: 2;
+   padding-right: 0;
+}
+
+.TreqerSchoolBody
+{
+   background-color: #EFEFEF;
+   margin: 5px;
+}
+
+.RefreshLabel
+{
+   font-family: helvetica, arial, Tahoma, verdana, sans-serif;
+   font-size: 9pt;
+   font-weight: bold;
+   color: #000000;
+   white-space: nowrap;
+   text-align: center;
+   vertical-align: middle;
+   padding-left: 10;
+   padding-right: 0;
+}
+
+.RefreshDate
+{
+   font-family: helvetica, arial, Tahoma, verdana, sans-serif;
+   font-size: 9pt;
+   font-weight: normal;
+   color: #000000;
+   white-space: nowrap;
+   text-align: center;
+   vertical-align: middle;
+   padding-left: 2;
+   padding-right: 0;
+}
+
+.SchoolName
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 14pt;
+   font-weight: bold;
+   color: #5C798F; /*C.1a was 660000*/
+   white-space: nowrap;
+   width: 100%;
+   text-align: center;
+   padding-left: 2;
+   padding-right: 10;
+}
+
+.ComplexSearchTitle
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 18pt;
+   font-weight: bold;
+   color: #ffffff; /*C.1a was 660000*/
+   background-color: #5C798F; /*C.1a was 660000*/
+   white-space: nowrap;
+   width: 30%;
+   xxtext-align: center;
+   padding-left: 2px;
+   padding-right: 10px;
+}
+
+.LegendTitle
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 10pt;
+   font-weight: bold;
+   color: #5C798F; /*C.1a was 660000*/
+   white-space: nowrap;
+   width: 100%;
+   text-align: left;
+   padding-left: 2px;
+   padding-right: 10px;
+}
+
+.LegendItem
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: bold;
+   color: #0000FF;
+   background-color: #efefef;
+   width: 20px;
+   text-align: right;
+   padding-left: 2px;
+   padding-right: 2px;
+}
+
+.LegendLabel
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: bold;
+   color: #5C798F; /*C.1a was 660000*/
+   background-color: #efefef;
+   text-align: left;
+   padding-left: 2px;
+   padding-right: 8px;
+}
+
+.DisclaimerTitle
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 10pt;
+   font-weight: bold;
+   color: #5C798F; /*C.1a was 660000*/
+   white-space: nowrap;
+   width: 100%;
+   text-align: left;
+   padding-left: 2;
+   padding-right: 10;
+}
+
+.DisclaimerText
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: bold;
+   color: #5C798F; /*C.1a was 660000*/
+   background-color: #efefef;
+   text-align: left;
+   padding-left: 8px;
+   padding-right: 8px;
+}
+
+.FinAidTopDisclaimer
+{
+   font-family: helvetica, arial, sans-serif;
+   font-size: 8pt;
+   color: #5C798F;
+   font-weight: bold;
+}
+
+.BorderLight
+{
+   background-color: #ddd; /*C.1a was 9E2828*/;
+   height: 1px;
+}
+
+.BorderDark
+{
+   background-color: #5C798F; /*C.1a was 660000*/
+   height: 1px;
+}
+
+.FrameBorderDark
+{
+   border-color: #5C798F; /*C.1a was 660000*/
+}
+
+.Blocks
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   background-color: #F8F8F8; /*C.1a was 9E2828*/;
+   color: #FFFFFF;
+}
+
+.BlockHeader
+{
+   font-family: Tahoma, helvetica, arial, serif;
+   font-size: 10pt;
+   font-weight: bold;
+   background-color: #5B788F; /*C.1a was 660000*/ /*D02 5C798F*/
+   background-image: url("common/bg-header.gif");
+   background-repeat: repeat-x;
+   color: #FFFFFF;
+   text-align: left;
+   padding-right: 2px;
+   padding-left: 2px;
+}
+
+.SectionCourseKey
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 8pt;
+   font-weight: bold;
+   color: #FFFFFF;
+   white-space: nowrap;
+   text-align: right;
+   padding-right: 8px;
+   padding-left: 0px;
+}
+
+.SectionCourseTitle
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 8pt;
+   font-weight: normal;
+   white-space: nowrap;
+   text-align: left;
+   padding-left: 0px;
+   padding-right: 8px;
+}
+
+.SectionCourseGrade
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 8pt;
+   font-weight: normal;
+   white-space: nowrap;
+   text-align: left;
+   padding-left: 0px;
+   padding-right: 8px;
+}
+
+.SectionCourseCredits
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 8pt;
+   font-weight: normal;
+   white-space: nowrap;
+   text-align: left;
+   padding-left: 0px;
+   padding-right: 8px;
+}
+
+.SectionCourseTerm
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 8pt;
+   font-weight: normal;
+   white-space: nowrap;
+   text-align: left;
+   padding-left: 0px;
+   padding-right: 8px;
+}
+
+.SectionTransferLine
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 8pt;
+   font-weight: normal;
+   white-space: nowrap;
+   text-align: left;
+   padding-left: 20px;
+   padding-right: 8px;
+   padding-top: 3px;
+   padding-bottom: 3px;
+}
+
+.ClassesAppliedClasses
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 8pt;
+   font-weight: bold;
+   width: 100px;
+   padding-right: 3px;
+   padding-left: 3px;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   white-space: nowrap;
+}
+
+.TranscriptCourseKey
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 8pt;
+   font-weight: bold;
+   xxwidth: 100px;
+   padding-right: 3px;
+   padding-left: 3px;
+   padding-top: 3px;
+   padding-bottom: 3px;
+}
+
+.ClassesAppliedClassesKeyOnly
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 8pt;
+   font-weight: bold;
+   color: #000000;
+   padding-right: 3px;
+   padding-left: 3px;
+   padding-top: 3px;
+   padding-bottom: 3px;
+}
+
+.AuditNotesHeader
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: bold;
+   color: #5C798F; /*C.1a was 660000*/
+   background-color: #efefef;
+   white-space: nowrap;
+   text-align: left;
+   padding-right: 8px;
+   padding-left: 8px;
+}
+
+.AuditNotesTitle
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 10pt;
+   font-weight: bold;
+   color: #5C798F; /*C.1a was 660000*/
+   white-space: nowrap;
+   border-color: red;
+   width: 100%;
+   text-align: left;
+   padding-left: 2px;
+   padding-right: 10px;
+}
+
+.AuditNotesData
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: normal;
+   color: #000000;
+   text-align: left;
+   padding-left: 8px;
+   padding-right: 8PX;
+}
+
+.AuditExceptionData
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 8pt;
+   font-weight: normal;
+   color: #000000;
+   /*white-space: nowrap;*/
+   text-align: left;
+   padding-left: 8px;
+   padding-right: 8PX;
+}
+
+.LookAheadTable
+{
+   background-color: #fff;
+   width: 100%
+}
+
+.LookAheadHeadBorderLight
+{
+   background-color: #ddd; /*C.1a was 9E2828*/;
+   height: 1px;
+}
+
+.LookAheadHeadBorderDark
+{
+   background-color: #5C798F; /*C.1a was 660000*/
+   height: 1px;
+}
+
+.LookAheadTitle
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 10pt;
+   font-weight: bold;
+   color: #FFFFFF;
+   background-color: #5C798F; /*C.1a was 660000*/
+   white-space: nowrap;
+   border-color: red;
+   width: 100%;
+   text-align: left;
+   padding-left: 2;
+   padding-right: 2;
+}
+
+.LookAheadExplanation
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 10pt;
+   font-weight: bold;
+   color: #fff; /*C.1a was 660000*/
+   background-color: #5C798F; /*C.1a was 9E2828*/;
+   border-color: red;
+   width: 100%;
+   text-align: left;
+   padding-left: 2;
+   padding-right: 10;
+}
+
+.LookAheadCaption
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: bold;
+   color: #5C798F; /*C.1a was 660000*/
+   background-color: #fff;
+   text-align: left;
+   padding-left: 1;
+   padding-right: 1;
+}
+
+.LookAheadLabel
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: bold;
+   color: #5C798F; /*C.1a was 660000*/
+   background-color: #fff;
+   width: 100px;
+   text-align: right;
+   padding-left: 8;
+   padding-right: 8;
+}
+
+.LookAheadInput
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: bold;
+   color: #5C798F; /*C.1a was 660000*/
+   background-color: #fff;
+   text-align: left;
+   align: left;
+   padding-left: 2;
+   padding-right: 8;
+}
+
+.LookAheadButton
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: normal;
+   color: #5C798F; /*C.1a was 660000*/
+   background-color: #efefef;
+   text-align: center;
+   padding-left: 8px;
+   padding-right: 8px;
+   background-image: url("common/bg-button.gif");
+   border: double 3px #fff;
+}
+
+.LookAheadButton:hover
+{
+   background-image: url("common/bg-button-hover.gif");
+}
+
+.LookAheadSelect
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: bold;
+   color: #5C798F; /*C.1a was 660000*/
+   width: 50px;
+   height: 15px;
+   text-align: left;
+   padding-left: 2;
+   padding-right: 0;
+}
+
+.LookAheadClasses
+{
+   font-family: "Courier New", "MS Sans Serif", verdana, arial;
+   font-size: 9pt;
+   font-weight: normal;
+   color: #5C798F; /*C.1a was 660000*/
+   width: 120px;
+   text-align: left;
+   padding-left: 2;
+   padding-right: 0;
+}
+
+.LookAheadClassReport
+{
+   font-family: "Courier New", "MS Sans Serif", verdana, arial;
+   font-size: 9pt;
+   font-weight: normal;
+   color: #5C798F; /*C.1a was 660000*/
+   text-align: left;
+   padding-left: 2;
+   padding-right: 0;
+}
+
+.LookAheadBlockClassLabel
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: normal;
+   color: #5C798F; /*C.1a was 660000*/
+   padding-left: 0;
+   padding-right: 0;
+}
+
+.WhatIfTable
+{
+   background-color: #fff;
+   width: 100%
+}
+
+.WhatIfHeadBorderLight
+{
+   background-color: #ddd; /*C.1a was 9E2828*/;
+   height: 1px;
+}
+
+.WhatIfHeadBorderDark
+{
+   background-color: #5C798F; /*C.1a was 660000*/
+   height: 1px;
+}
+
+.WhatIfTitle
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 10pt;
+   font-weight: bold;
+   color: #FFFFFF;
+   background-color: #5C798F; /*C.1a was 660000*/
+   white-space: nowrap;
+   border-color: red;
+   width: 100%;
+   text-align: left;
+   padding-left: 2;
+   padding-right: 2;
+}
+
+.WhatIfBlockSection
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 10pt;
+   font-weight: bold;
+   color: #FFFFFF; /*C.1a was 660000*/
+   background-color: #5C798F; /*C.1a was 9E2828*/;
+   white-space: nowrap;
+   border-color: red;
+   width: 100%;
+   text-align: left;
+   padding-left: 2;
+   padding-right: 10;
+}
+
+.WhatIfLabel
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: bold;
+   color: #5C798F; /*C.1a was 660000*/
+   background-color: #fff;
+   width: 100px;
+   text-align: right;
+   padding-left: 8;
+   padding-right: 8;
+}
+
+.WhatIfInput
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: bold;
+   color: #5C798F; /*C.1a was 660000*/
+   background-color: #fff;
+   text-align: left;
+   padding-left: 2;
+   padding-right: 8;
+}
+
+.WhatIfRemove
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: normal;
+   color: #5C798F; /*C.1a was 660000*/
+   background-color: #fff;
+   text-align: center;
+   padding-left: 0;
+   padding-right: 0;
+}
+
+.WhatIfSelect
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: bold;
+   color: #5C798F; /*C.1a was 660000*/
+   width: 350px;
+   height: 22px;
+   text-align: left;
+   padding-left: 2;
+   padding-right: 0;
+}
+
+.WhatIfBlocks
+{
+   font-family: "Courier New", "MS Sans Serif", verdana, arial;
+   font-size: 9pt;
+   font-weight: normal;
+   color: #5C798F; /*C.1a was 660000*/
+   width: 450px;
+   text-align: left;
+   padding-left: 2;
+   padding-right: 0;
+   background-color: #FFFFEE;
+}
+
+/* 1.1f Begin */
+.WhatIfBlockReport
+{
+   font-family: "Courier New", "MS Sans Serif", verdana, arial;
+   font-size: 9pt;
+   font-weight: normal;
+   color: #5C798F; /*C.1a was 660000*/
+   text-align: left;
+   padding-left: 2;
+   padding-right: 0;
+}
+
+/* 1.1f End */
+.TableHeader
+{
+   font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+   background-color: #415D72; /*C.1a was 660000*/;
+}
+
+.TableHeaderText
+{
+   font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+   font-size: 9pt;
+   color: #ffffff;
+}
+
+.xxselect
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: bold;
+   color: #5C798F; /*C.1a was 660000*/
+   width: 300px;
+   height: 15px;
+   text-align: left;
+   padding-left: 2;
+   padding-right: 8;
+}
+
+.ExceptionsTable
+{
+   background-color: #efefef;
+   width: 100%
+}
+
+.ExceptionsTable2
+{
+   background-color: #efefef;
+   width: 100%
+}
+
+.ExceptionInputNet4
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: normal;
+   color: 000000;
+   background-color: FFFFFF;
+}
+
+.ExceptionType
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: bold;
+   color: #5C798F; /*C.1a was 660000*/
+   background-color: #efefef;
+   white-space: nowrap;
+   text-align: left;
+   padding-left: 8;
+   padding-right: 8;
+}
+
+.xxxExceptionData
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: bold;
+   color: #000000;
+   background-color: #efefef;
+   white-space: nowrap;
+   text-align: right;
+   padding-left: 8;
+   padding-right: 8;
+}
+
+.ExceptionsHeadBorderLight
+{
+   background-color: #ddd; /*C.1a was 9E2828*/;
+   height: 1px;
+}
+
+.ExceptionHeader
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: bold;
+   color: #5C798F; /*C.1a was 660000*/
+   background-color: #efefef;
+   /*white-space: nowrap;*/
+   text-align: left;
+   padding-right: 8px;
+   padding-left: 8px;
+}
+
+.ExceptionTitle
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 10pt;
+   font-weight: bold;
+   color: #5C798F; /*C.1a was 660000*/
+   white-space: nowrap;
+   border-color: red;
+   width: 100%;
+   text-align: left;
+   padding-left: 2;
+   padding-right: 10;
+}
+
+.ExceptionData
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: normal;
+   color: #000000;
+   background-color: #efefef;
+   white-space: nowrap;
+   text-align: left;
+   padding-left: 8;
+   padding-right: 8;
+}
+
+.ExceptionData2
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: normal;
+   color: #000000;
+   text-align: left;
+   padding-left: 8;
+   padding-right: 8;
+}
+
+.ExceptionData3
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: normal;
+   color: #000000;
+   white-space: nowrap;
+   text-align: left;
+   padding-left: 8;
+   padding-right: 8;
+}
+
+.ExceptionData4
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: normal;
+   color: #000000;
+   background-color: #fff; /*C.1a was E3E3B3*/;
+   white-space: nowrap;
+   text-align: left;
+   padding-left: 8;
+   padding-right: 8;
+}
+
+.ExceptionDataNumber
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: normal;
+   color: #000000;
+   text-align: right;
+   padding-left: 8;
+   padding-right: 8;
+}
+
+.ExceptionComment
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: normal;
+   color: #5C798F; /*C.1a was 660000*/
+   text-align: left;
+   padding-left: 2;
+   padding-right: 2;
+}
+
+.ExceptionButton
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: bold;
+   color: #5C798F; /*C.1a was 660000*/
+   background-color: #efefef;
+   text-align: center;
+   padding-left: 8px;
+   padding-right: 8px;
+   background-image: url("common/bg-button.gif");
+   border: double 3px #fff;
+   height: 26px;
+}
+
+.ExceptionButton:hover
+{
+   background-image: url("common/bg-button-hover.gif");
+}
+
+.ExceptionInput
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: normal;
+   color: #000000;
+   text-align: left;
+   padding-left: 0;
+   padding-right: 0;
+   width: 50px;
+}
+
+.ExceptionInput2
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: normal;
+   color: #000000;
+   text-align: left;
+   padding-left: 0;
+   padding-right: 0;
+}
+
+.ExceptionCourse
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: normal;
+   color: #000000;
+   white-space: nowrap;
+   text-align: left;
+   padding-right: 8;
+   padding-left: 0;
+   width: 10%;
+}
+
+.ExceptionCourse:link
+{
+   font-family: helvetica, helvetica, arial, sans-serif;
+   text-decoration: none;
+   font-size: 9pt;
+   color: #5C798F; /*C.1a was 660000*/
+   font-weight: bold;
+}
+
+.ExceptionCourse:visited
+{
+   font-family: helvetica, helvetica, arial, sans-serif;
+   text-decoration: none;
+   font-size: 9pt;
+   color: #5C798F; /*C.1a was 660000*/
+   font-weight: bold;
+}
+
+.ExceptionCourse:hover
+{
+   font-family: helvetica, helvetica, arial, sans-serif;
+   text-decoration: underline;
+   font-size: 9pt;
+   color: #5C798F; /*C.1a was 660000*/
+   font-weight: bold;
+}
+
+.ExceptionCourse:active
+{
+   font-family: helvetica, helvetica, arial, sans-serif;
+   text-decoration: italic;
+   font-size: 9pt;
+   color: #5C798F; /*C.1a was 660000*/
+   font-weight: bold;
+}
+
+.AuditTable
+{
+   background-color: #fff; /*C.1a was E3E3B3*/;
+}
+
+.AuditHeadBorderDark
+{
+   background-color: #5C798F; /*C.1a was 660000*/ /*D02 was 5C798F*/
+   height: 1px;
+}
+
+.AuditHeadBorderLight
+{
+   background-color: #ddd; /*C.1a was 9E2828*/ /*D02 was 587993*/ /* 5C798F */
+   height: 1px;
+}
+
+.BlockAdviceBorder
+{
+   background-color: #efefef;
+}
+
+.BlockRemarksBorder
+{
+   background-color: #efefef;
+}
+
+.ExpMgtTable
+{
+   background-color: #5C798F; /*C.1a was E3E3B3*/;
+}
+
+.ExpMgtBorderDark
+{
+   background-color: #5C798F; /*C.1a was 660000*/
+}
+
+.ExpMgtBorderLight
+{
+   background-color: #ddd; /*C.1a was 9E2828*/;
+   height: 1px;
+}
+
+.ExpMgtTitle
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 10pt;
+   font-weight: bold;
+   color: #fff; /*C.1a was 660000*/
+   background-color: #5C798F; /*C.1a was 660000*/
+   white-space: nowrap;
+   width: 100%;
+   text-align: left;
+   padding-left: 2;
+   padding-right: 10;
+}
+
+.ExpMgtServiceTitle
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 10pt;
+   font-weight: bold;
+   color: #FFFFFF;
+   background-color: #5C798F; /*C.1a was 660000*/
+   width: 100%;
+   text-align: left;
+   padding-left: 2;
+   padding-right: 30;
+}
+
+.ExpMgtText
+{
+   font-family: helvetica, arial, "MS Sans Serif", verdana, sans-serif;
+   font-size: 8pt;
+   font-weight: bold;
+   color: #5C798F; /*C.1a was 660000*/
+   background-color: #efefef;
+   text-align: left;
+   padding-left: 8;
+   padding-right: 8;
+}
+
+.ExpMgtHead
+{
+   background-color: #5C798F; /*C.1a was 660000*/
+}
+
+.ExpMgtHeadTitle
+{
+   font-family: helvetica, arial, sans-serif;
+   font-size: 10pt;
+   color: #FFFFFF;
+   font-weight: bold;
+}
+
+.ExpMgtHeadCaption
+{
+   font-family: helvetica, arial, sans-serif;
+   font-size: 9pt;
+   color: #FFFFFF;
+   font-weight: normal;
+}
+
+.ExpMgtInputSelect
+{
+   font-family: Tahoma, "MS Sans Serif", helvetica, helvetica, arial, sans-serif;
+   font-size: 10pt;
+   margin-top: 1px;
+}
+
+.ExpMgtRadioText
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 8pt;
+   color: #000000;
+   white-space: nowrap;
+   text-align: left;
+   padding-left: 8;
+   padding-right: 8;
+}
+
+.RuleRemarksBorder
+{
+   background-color: #5C798F; /*C.1a was 660000*/
+}
+
+.RequirementTextBorder
+{
+   background-color: #AAAAAA;
+}
+
+/* The Notes styles are used by the Audit report and the Notes services:
+ /* View, Modify, Edit and Delete */
+.NotesHeader
+{
+   font-family: Tahoma, helvetica, arial, serif;
+   font-size: 10pt;
+   color: #FFFFFF;
+   font-weight: bold;
+   padding-left: 5;
+}
+
+.NotesTitle
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: bold;
+   color: #5C798F; /*C.1a was 660000*/
+   background-color: #efefef;
+   white-space: nowrap;
+   text-align: left;
+   padding-right: 8;
+   padding-left: 8;
+}
+
+.NotesSubTitle
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: normal;
+   color: #000000;
+   background-color: #efefef;
+   width: 15%;
+   text-align: left;
+   padding-left: 8;
+   padding-right: 30;
+}
+
+.NotesDataText
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: normal;
+   color: #000000;
+   width: 20%;
+   text-align: left;
+   padding-left: 8;
+   padding-right: 30;
+}
+
+.NotesDataWho
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: normal;
+   color: #000000;
+   width: 10%;
+   text-align: left;
+   padding-left: 8;
+   padding-right: 30;
+}
+
+.NotesDataWhen
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: normal;
+   color: #000000;
+   width: 5%;
+   text-align: left;
+   padding-left: 8;
+   padding-right: 30;
+}
+
+.AddNotesTitle
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 10pt;
+   font-weight: bold;
+   color: #FFFFFF;
+   background-color: #5C798F; /*C.1a was 660000*/
+   width: 100%;
+   text-align: left;
+   padding-left: 2;
+   padding-right: 30;
+}
+
+.AddNotesSubTitle
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: bold;
+   color: #5C798F; /*C.1a was 660000*/
+   background-color: #F8F8F8; /*C.1a was 9E2828*/;
+   width: 100%;
+   text-align: left;
+   padding-left: 8;
+   padding-right: 30;
+}
+
+.AddNotesOptions
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: normal;
+   color: #5C798F; /*C.1a was 660000*/
+   background-color: #efefef;
+   text-align: left;
+   padding-left: 8;
+   padding-right: 30;
+}
+
+.AddNotesText
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: bold;
+   color: #000000;
+   text-align: left;
+   padding-left: 0;
+   padding-right: 0;
+}
+
+/* The Petitions styles are used by the Audit report and the Petitions services:
+ /* View, Modify, Edit and Delete */
+.PetitionsTableHead
+{
+   background-color: #F8F8F8; /*C.1a was 9E2828*/;
+}
+
+.PetitionsHeader
+{
+   font-family: Tahoma, helvetica, arial, serif;
+   font-size: 10pt;
+   color: #5C798F; /*C.1a was 660000*/
+   font-weight: bold;
+   padding-left: 5;
+}
+
+.PetitionsTitle
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: bold;
+   color: #5C798F; /*C.1a was 660000*/
+   background-color: #efefef;
+   white-space: nowrap;
+   text-align: left;
+   padding-right: 8;
+   padding-left: 8;
+}
+
+.PetitionsSubTitle
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: bold;
+   color: #5C798F; /*C.1a was 660000*/
+   background-color: #efefef;
+   white-space: nowrap;
+   text-align: right;
+   padding-right: 8;
+   padding-left: 8;
+}
+
+.xxxxxxxxxPetitionsSubTitle
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: normal;
+   color: #000000;
+   background-color: #efefef;
+   text-align: right;
+   padding-left: 8;
+   padding-right:;
+}
+
+.PetitionsDataText
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: normal;
+   color: #000000;
+   width: 20%;
+   text-align: left;
+   padding-left: 8;
+   padding-right: 8;
+}
+
+.PetitionsDataWho
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: normal;
+   color: #000000;
+   width: 10%;
+   text-align: left;
+   padding-left: 8;
+   padding-right: 8;
+}
+
+.PetitionsDataWhen
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: normal;
+   color: #000000;
+   width: 5%;
+   text-align: left;
+   padding-left: 8;
+   padding-right: 8;
+}
+
+.AddPetitionsTitle
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 10pt;
+   font-weight: bold;
+   color: #FFFFFF;
+   background-color: #5C798F; /*C.1a was 660000*/
+   width: 100%;
+   text-align: left;
+   padding-left: 2;
+   padding-right: 30;
+}
+
+.AddPetitionsSubTitle
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: bold;
+   color: #5C798F; /*C.1a was 660000*/
+   background-color: #F8F8F8; /*C.1a was 9E2828*/;
+   width: 100%;
+   text-align: left;
+   padding-left: 8;
+   padding-right: 30;
+}
+
+.AddPetitionsOptions
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: normal;
+   color: #5C798F; /*C.1a was 660000*/
+   background-color: #efefef;
+   text-align: left;
+   padding-left: 8;
+   padding-right: 30;
+}
+
+.AddPetitionsText
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: bold;
+   color: #000000;
+   text-align: left;
+   padding-left: 0;
+   padding-right: 0;
+}
+
+.PetitionsRadio
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: bold;
+   color: #5C798F; /*C.1a was 660000*/
+   background-color: #efefef;
+   white-space: nowrap;
+   text-align: left;
+   padding-right: 8;
+   padding-left: 8;
+}
+
+.ClassTableHeadTitle
+{
+   font-family: helvetica, arial, serif;
+   font-size: 10pt;
+   color: #FFFFFF;
+   font-weight: bold;
+}
+
+.FindStudentsTitle
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: bold;
+   color: #5C798F; /*C.1a was 660000*/
+   background-color: #efefef;
+   white-space: nowrap;
+   text-align: left;
+   padding-right: 8;
+   padding-left: 8;
+}
+
+.FindStudentsData
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: normal;
+   color: #000000;
+   white-space: nowrap;
+   text-align: left;
+   padding-left: 8;
+   padding-right: 30;
+}
+
+.ClassTableTitle
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: bold;
+   color: #5C798F; /*C.1a was 660000*/
+   background-color: #efefef;
+   white-space: nowrap;
+   width: 3%;
+   text-align: left;
+   padding-right: 8;
+   padding-left: 8;
+}
+
+.ClassTableData
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: normal;
+   color: #000000;
+   width: 15%;
+   white-space: nowrap;
+   text-align: left;
+   padding-left: 8;
+   padding-right: 30;
+}
+
+.ClassTableSubTitle
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: bold;
+   color: #FFFFFF;
+   white-space: nowrap;
+   text-align: right;
+   padding-right: 8;
+   padding-left: 0;
+}
+
+.ClassTableSubData
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: normal;
+   color: #FFFFFF;
+   white-space: nowrap;
+   text-align: left;
+   padding-left: 0;
+   padding-right: 8;
+}
+
+.SectionTableTitle
+{
+   font-family: helvetica, arial, serif;
+   font-size: 10pt;
+   color: #FFFFFF;
+   font-weight: bold;
+}
+
+.SectionTableSubTitle
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: bold;
+   color: #FFFFFF;
+   white-space: nowrap;
+   text-align: right;
+   padding-right: 8;
+   padding-left: 0;
+}
+
+.SectionTableSubData
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: normal;
+   color: #FFFFFF;
+   white-space: nowrap;
+   text-align: left;
+   padding-left: 0;
+   padding-right: 8;
+}
+
+.IntroHead
+{
+   background-color: #fff; /*C.1a was E3E3B3*/;
+   font-family: helvetica, arial, sans-serif;
+   font-size: 10pt;
+   color: #000000;
+   font-weight: bold;
+}
+
+/* Header above student section */
+.StuHead
+{
+   background-color: #5C798F; /*C.1a was 660000*/
+}
+
+.StuHeadTitle
+{
+   font-family: Tahoma, helvetica, arial, sans-serif;
+   font-size: 10pt;
+   color: #fff; /*D02 was FFF*/
+   font-weight: bold;
+   padding-left: 6px;
+}
+
+.StuHeadCaption
+{
+   font-family: Tahoma, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   color: #fff; /*D02 was FFF*/
+   font-weight: normal;
+}
+
+.StuTableTitle
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: bold;
+   color: #5C798F; /*C.1a was 660000*/
+   background-color: #D2E2EE;
+   white-space: nowrap;
+   width: 3%;
+   text-align: left;
+   padding-right: 8px;
+   padding-left: 8px;
+   border-bottom: solid 2px white;
+   border-left: solid 2px white;
+}
+
+.StuTableData
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: normal;
+   color: #000000;
+   background-color: #efefef;
+   width: 15%;
+   white-space: nowrap;
+   text-align: left;
+   padding-left: 8px;
+   padding-right: 30px;
+   border-bottom: solid 2px white;
+}
+
+.StuTableDataHighlight
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: normal;
+   color: #CC0000;
+   background-color: #FFFFE0;
+   width: 15%;
+   white-space: nowrap;
+   text-align: left;
+   padding-left: 8px;
+   padding-right: 30px;
+   border-bottom: solid 2px white;
+}
+
+.BlockHeadTitle
+{
+   font-family: Tahoma, helvetica, arial, serif;
+   font-size: 10pt;
+   color: #FFFFFF;
+   font-weight: bold;
+   padding-left: 8px;
+}
+
+.BlockHeadSubTitle
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: bold;
+   color: #FFFFFF;
+   white-space: nowrap;
+   text-align: right;
+   padding-right: 8;
+   padding-left: 0;
+}
+
+.BlockHeadSubData
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: normal;
+   color: #FFFFFF;
+   white-space: nowrap;
+   text-align: left;
+   padding-left: 0;
+   padding-right: 8px;
+}
+
+.BlockAdviceTable
+{
+   background-color: #F8F8F8; /*C.1a was 9E2828*/;
+}
+
+.BlockAdviceTitle
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: bold;
+   color: #5C798F; /*C.1a was 660000*/
+   white-space: nowrap;
+   text-align: left;
+   padding-right: 8px;
+   padding-left: 8px;
+}
+
+.BlockAdviceData
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: normal;
+   color: #5C798F; /*C.1a was 660000*/
+   text-align: left;
+   padding-left: 0px;
+   padding-right: 8px;
+}
+
+/* background-color: #CCCC88; */
+.BlockRemarksTable
+{
+   background-color: #efefef;
+}
+
+.BlockRemarksData
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: italic;
+   color: #5C798F; /*C.1a was 660000*/
+   text-align: left;
+   padding-left: 20px;
+   padding-right: 8px;
+}
+
+.RequirementTextTable
+{
+   background-color: #efefef;
+}
+
+.RequirementTextTitle
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: normal;
+   color: #888; /*C.1a was 660000*/
+   white-space: nowrap;
+   text-align: right;
+   padding-right: 8px;
+   padding-left: 8px;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   width: 10%;
+}
+
+.RequirementText
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: normal;
+   color: #5C798F; /*C.1a was 660000*/
+   text-align: left;
+   padding-right: 8px;
+   padding-left: 8px;
+}
+
+.RuleAdviceNeeded
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 8pt;
+   color: #EE0000;
+   padding-right: 3;
+   padding-left: 3;
+   padding-top: 2px;
+   padding-bottom: 2px;
+   white-space: nowrap;
+   width: 10%;
+}
+
+.origRuleLabelTitle
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: bold;
+   background-color: #efefef;
+   color: #5C798F; /*C.1a was 660000*/
+   text-align: left;
+   padding-right: 8;
+   padding-left: 8;
+   width: 3%;
+}
+
+.RuleLabelLine
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: bold;
+   color: #5C798F; /*C.1a was 660000*/
+   text-align: left;
+   padding-right: 8px;
+   padding-left: 8px;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   width: 20%;
+}
+
+.RuleLabelTitle
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: bold;
+   color: #5C798F; /*C.1a was 660000*/
+   text-align: left;
+   padding-right: 2px;
+   padding-left: 2px;
+}
+
+.RuleLabelTitleNotNeeded
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: bold;
+   color: #606060;
+   text-align: left;
+   padding-right: 2px;
+   padding-left: 2px;
+}
+
+.RuleLabelTitleNeeded
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: bold;
+   color: #5C798F; /*C.1a was 660000*/
+   text-align: left;
+   padding-right: 2px;
+   padding-left: 2px;
+}
+
+.RuleLabelTitleNotNeededLeft
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: bold;
+   color: #606060;
+   text-align: left;
+}
+
+.RuleLabelTitleNeededLeft
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: bold;
+   color: #5C798F; /*C.1a was 660000*/
+   text-align: left;
+}
+
+.RuleLabelData
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: bold;
+   color: #5C798F; /*C.1a was 660000*/
+   text-align: left;
+   padding-right: 8px;
+   padding-left: 2px;
+   width: 60%;
+}
+
+.RuleAdviceTitle
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: normal;
+   color: #CC0000;
+   text-align: right;
+   padding-right: 8px;
+   padding-left: 2px;
+   width: 3%;
+}
+
+.RuleAdviceTitleNew
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: normal;
+   color: #CC0000;
+   text-align: left;
+   padding-right: 8px;
+   padding-left: 2px;
+   width: 70px;
+   white-space: nowrap !important;
+}
+
+.RuleAdviceTitleNewSEP
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: normal;
+   color: #CC0000;
+   text-align: right;
+   padding-right: 8px;
+   padding-left: 2px;
+   xxwidth: 70px;
+   white-space: nowrap !important;
+}
+
+.RuleAdviceData
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: normal;
+   color: #000000;
+   text-align: left;
+   padding-right: 8px;
+   padding-left: 2px;
+}
+
+.RuleExceptionTitle
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: bold;
+   color: #415D72;
+   white-space: nowrap;
+   text-align: left;
+   padding-right: 8px;
+   padding-left: 8px;
+}
+
+.RuleExceptionTitleRight
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: bold;
+   color: #415D72;
+   white-space: nowrap;
+   text-align: right;
+   padding-right: 8px;
+   padding-left: 8px;
+}
+
+.RuleExceptionByTitle
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: bold;
+   color: #415D72;
+   white-space: nowrap;
+   text-align: left;
+   padding-right: 8px;
+   padding-left: 8px;
+   width: 20%;
+}
+
+.RuleExceptionByData
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: normal;
+   color: #000000;
+   white-space: nowrap;
+   text-align: left;
+   padding-right: 8px;
+   padding-left: 2px;
+   width: 20%;
+}
+
+.RuleExceptionOnTitle
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: bold;
+   color: #415D72;
+   white-space: nowrap;
+   text-align: left;
+   padding-right: 8px;
+   padding-left: 8px;
+   width: 20%;
+}
+
+.RuleExceptionOnData
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: normal;
+   color: #000000;
+   white-space: nowrap;
+   text-align: left;
+   padding-right: 8px;
+   padding-left: 2px;
+   width: 20%;
+}
+
+.RuleExceptionData
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: normal;
+   color: #000000;
+   white-space: nowrap;
+   text-align: left;
+   padding-right: 8px;
+   padding-left: 18px;
+}
+
+.RuleExceptionTextData
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: bold;
+   color: blue;
+   white-space: nowrap;
+   text-align: left;
+   padding-right: 8px;
+   padding-left: 18px;
+}
+
+/*	background-color: #CCCC88; */
+.RuleRemarksTable
+{
+   background-color: #efefef;
+}
+
+.RuleRemarksData
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: normal;
+   color: #5C798F; /*C.1a was 660000*/
+   text-align: left;
+   padding-left: 20px;
+   padding-right: 8px;
+}
+
+.NoncourseDataLabel
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: bold;
+   color: #000000;
+   white-space: nowrap;
+   text-align: left;
+   padding-right: 8;
+   padding-left: 0;
+   width: 10%;
+}
+
+.NoncourseDataCode
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: normal;
+   color: #000000;
+   white-space: nowrap;
+   text-align: left;
+   padding-right: 8;
+   padding-left: 0;
+   width: 10%;
+}
+
+.NoncourseDataLiteral
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: normal;
+   color: #000000;
+   white-space: nowrap;
+   text-align: left;
+   padding-right: 8;
+   padding-left: 0;
+   width: 30%;
+}
+
+.CourseTableData
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: normal;
+   color: #000000;
+   text-align: left;
+   padding-right: 8;
+   padding-left: 0;
+   width: 10%;
+}
+
+.CourseAppliedRowWhiteOld
+{
+   color: #000000;
+}
+
+.CourseAppliedRowWhite
+{
+   color: #606060;
+}
+
+.CourseAppliedRowAlt
+{
+   background-color: #efefef;
+   color: #606060;
+}
+
+.CourseAppliedDataDiscNum
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: bold;
+   white-space: wrap;
+   text-align: left;
+   padding-right: 8px;
+   padding-left: 0px;
+   width: 20%;
+}
+
+.CourseAppliedDataDiscNumLookAhead
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: bold;
+   color: #415D72;
+   white-space: nowrap;
+   text-align: left;
+   padding-right: 8px;
+   padding-left: 0px;
+   width: 20%;
+}
+
+.CourseAppliedDataTitle
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: normal;
+   white-space: nowrap;
+   text-align: left;
+   padding-right: 8px;
+   padding-left: 0px;
+   width: 45%;
+}
+
+.CourseAppliedDataTitleLookAhead
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: normal;
+   color: #415D72;
+   white-space: nowrap;
+   text-align: left;
+   padding-right: 8px;
+   padding-left: 0px;
+   width: 45%;
+}
+
+.CourseAppliedDataGrade
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: normal;
+   white-space: nowrap;
+   text-align: left;
+   padding-right: 8px;
+   padding-left: 0px;
+   width: 10%;
+}
+
+.CourseAppliedDataGradeLookAhead
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: normal;
+   color: #415D72;
+   white-space: nowrap;
+   text-align: left;
+   padding-right: 8px;
+   padding-left: 0px;
+   width: 10%;
+}
+
+.CourseAppliedDataCredits
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: normal;
+   white-space: nowrap;
+   text-align: left;
+   padding-right: 8px;
+   padding-left: 0px;
+   width: 10%;
+}
+
+.CourseAppliedDataCreditsLookAhead
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: normal;
+   color: #415D72;
+   white-space: nowrap;
+   text-align: left;
+   padding-right: 8px;
+   padding-left: 0px;
+   width: 10%;
+}
+
+.CourseAppliedDataTerm
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: normal;
+   white-space: nowrap;
+   text-align: left;
+   padding-right: 8px;
+   padding-left: 0px;
+   width: 15%;
+}
+
+.CourseAppliedDataTermLookAhead
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: normal;
+   color: #415D72;
+   white-space: nowrap;
+   text-align: left;
+   padding-right: 8px;
+   padding-left: 0px;
+   width: 15%;
+}
+
+.CourseAppliedDataSatisfiedBy
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: bold;
+   white-space: nowrap;
+   text-align: left;
+   padding-right: 8px;
+   padding-left: 8px;
+}
+
+.CourseTransferData
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: normal;
+   white-space: nowrap;
+   text-align: left;
+   padding-right: 1px;
+   padding-left: 20px;
+}
+
+.AuditErrorLabel
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: bold;
+   color: red;
+   text-align: left;
+   padding-right: 8;
+   padding-left: 8;
+   width: 20%;
+}
+
+.AuditErrorMessage
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: bold;
+   color: red;
+   text-align: left;
+   padding-right: 8;
+   padding-left: 8;
+   width: 100%;
+}
+
+/* Header above each block and each section */
+.TableHead
+{
+   background-color: #5C798F; /*C.1a was 660000*/ /*D02 was 5C798F*/
+}
+
+.TableHeadTitle
+{
+   font-family: helvetica, arial, serif;
+   font-size: 10pt;
+   color: #FFFFFF;
+   font-weight: bold;
+}
+
+.TableHeadCaption
+{
+   font-family: helvetica, arial, serif;
+   font-size: 10pt;
+   color: #FFFFFF;
+   font-weight: normal;
+}
+
+.ColumnTitle
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: bold;
+   color: #5C798F; /*C.1a was 660000*/
+   background-color: F4F4D3;
+   white-space: nowrap;
+   width: 3%;
+   text-align: left;
+   padding-right: 8;
+   padding-left: 8;
+}
+
+.ColumnData
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: normal;
+   color: #000000;
+   background-color: #FFFFFF;
+   width: 15%;
+   white-space: nowrap;
+   text-align: left;
+   padding-left: 8;
+   padding-right: 30;
+}
+
+.SearchTableTitle
+{
+   font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+   font-size: 9pt;
+   font-weight: bold;
+   color: #888888;
+   background-color: #efefef;
+   white-space: nowrap;
+   xxwidth: 5%;
+}
+
+.TableTitle
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 10pt;
+   font-weight: bold;
+   color: #5C798F; /*C.1a was 660000*/
+   background-color: #efefef;
+   white-space: nowrap;
+   width: 10%;
+   text-align: left;
+}
+
+.TableData
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 10pt;
+   font-weight: normal;
+   color: #000000;
+   background-color: #FFFFFF;
+   width: 20%;
+   white-space: nowrap;
+   text-align: left;
+}
+
+.SearchTableData
+{
+   font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+   font-size: 10pt;
+   font-weight: normal;
+   color: #000000;
+   background-color: #FFFFFF;
+   xxwidth: 15%;
+}
+
+input.SearchTableDataCheckbox
+{
+   font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+   font-size: 10pt;
+   font-weight: normal;
+   color: #000000;
+   background-color: #efefef;
+   width: 30px;
+}
+
+.SearchCriteriaList
+{
+   font-family: "Courier New", "MS Sans Serif", verdana, arial;
+   font-size: 9pt;
+   font-weight: normal;
+   color: #5C798F; /*C.1a was 660000*/
+   width: 300px;
+   text-align: left;
+   padding-left: 2;
+   padding-right: 0;
+}
+
+.DegInputSelect
+{
+   font-family: Tahoma, "MS Sans Serif", helvetica, helvetica, arial, sans-serif;
+   font-size: 10pt;
+   margin-top: 1px;
+   background-color: #FFFFFF;
+   height: 23px;
+}
+
+.TemplateInputSelect
+{
+   font-family: Tahoma, "MS Sans Serif", helvetica, helvetica, arial, sans-serif;
+   font-size: 8pt;
+   margin-top: 1px;
+   background-color: #FFFFFF;
+   height: 23px;
+   width: 280px;
+}
+
+.StandardInputSelect
+{
+   font-family: Tahoma, "MS Sans Serif", helvetica, helvetica, arial, sans-serif;
+   font-size: 10pt;
+   margin-top: 1px;
+   background-color: #FFFFFF;
+   height: 23px;
+}
+
+.StandardInputSelectMultiple
+{
+   font-family: Tahoma, "MS Sans Serif", helvetica, helvetica, arial, sans-serif;
+   font-size: 10pt;
+   margin-top: 1px;
+   background-color: #FFFFFF;
+   width: 400px;
+}
+
+.StandardLabel
+{
+   font-family: Tahoma, "MS Sans Serif", helvetica, helvetica, arial, sans-serif;
+   font-size: 10pt;
+}
+
+.DegInputSelectDisplay
+{
+   font-family: Tahoma, "MS Sans Serif", helvetica, helvetica, arial, sans-serif;
+   font-size: 10pt;
+   margin-top: 1px;
+   background-color: #efefef; /*D02 #FFFFCC*/
+}
+
+.DegInputText
+{
+   font-size: 10pt;
+   font-family: Tahoma, Helvetica, sans-serif;
+   color: #555;
+   padding: 2px;
+   border-color: #999 #ddd #ddd #999;
+   border-style: solid;
+   border-width: 1px;
+   height: 22px;
+}
+
+.DegInputTextDisplay
+{
+   font-family: Tahoma, "MS Sans Serif", helvetica, helvetica, arial, sans-serif;
+   font-size: 10pt;
+   font-weight: normal;
+   background-color: #efefef; /*D02 #FFFFCC*/
+}
+
+.TextRowOff
+{
+   font-family: helvetica, helvetica, arial, sans-serif;
+   font-size: 12px;
+   font-weight: normal;
+   color: black;
+   background-color: #FFFFFF;
+   cursor: hand;
+}
+
+.TextRowOver
+{
+   font-family: helvetica, helvetica, arial, sans-serif;
+   font-size: 12px;
+   font-weight: normal;
+   color: black;
+   background-color: #FFFFFF;
+   cursor: hand;
+}
+
+.TextRowOn
+{
+   font-family: helvetica, helvetica, arial, sans-serif;
+   font-size: 12px;
+   font-weight: normal;
+   color: white;
+   background-color: #888888;
+   cursor: hand;
+}
+
+.FindTitle
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: bold;
+   color: #000000;
+}
+
+.FindInputText
+{
+   font-family: "MS Sans Serif", helvetica, helvetica, arial, sans-serif;
+   font-size: 10pt;
+   font-weight: normal;
+   background: #dfdfdf; /*D02 #FFFFCC*/
+   background-color: #dfdfdf; /*D02 #FFFFCC*/
+}
+
+.FieldTitle
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: bold;
+   color: #666666;
+}
+
+.FieldInput
+{
+   font-family: r_ansi, helvetica, sans-serif;
+   font-size: 11px;
+   font-weight: normal;
+   background-color: #FFFFFF;
+   border-style: inset;
+   border-width: 2px;
+   padding: 1;
+}
+
+.FieldDisplay
+{
+   font-family: r_ansi, helvetica, sans-serif;
+   font-size: 11px;
+   font-weight: normal;
+   background-color: #DDE5ED;
+   border-style: groove;
+   border-width: 1px;
+   padding: 2;
+}
+
+.TextAreaControl
+{
+   font-family: r_ansi, helvetica, sans-serif;
+   font-size: 11px;
+   font-weight: normal;
+   background-color: #FFFFFF;
+   line-height: 20px;
+}
+
+.FieldSelect
+{
+   font-family: r_ansi, helvetica, sans-serif;
+   font-size: 11px;
+   font-weight: normal;
+   background-color: #DDE5ED;
+   border-style: groove;
+   border-width: 1px;
+   margin-top: 1;
+   padding: 1;
+}
+
+.FieldText
+{
+   font-family: helvetica, helvetica, arial, sans-serif;
+   font-size: 13px;
+   font-weight: normal;
+   background-color: #FFFFFF;
+   border-style: inset;
+   border-width: 2px;
+   padding: 1;
+}
+
+.SelectStudentList
+{
+   margin-top: 1;
+}
+
+#SelectMenu
+{
+   font-family: helvetica, helvetica, arial, sans-serif;
+   font-size: 9px;
+}
+
+.arrow
+{
+   font-family: helvetica, helvetica, arial, sans-serif;
+   font-size: 11pt;
+   font-weight: bold;
+   color: red;
+}
+
+.Tab
+{
+   font-family: verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   color: #415D72;
+   text-decoration: none;
+   font-weight: bold;
+}
+
+.Tab:link
+{
+   font-family: verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   color: #415D72;
+   text-decoration: none;
+   font-weight: bold;
+}
+
+.Tab:visited
+{
+   font-family: verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   color: #415D72;
+   text-decoration: none;
+   font-weight: bold;
+}
+
+.Tab:hover
+{
+   font-family: verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   color: #415D72;
+   text-decoration: underline;
+   font-weight: bold;
+}
+
+.Tab:active
+{
+   font-family: verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   color: #415D72;
+   text-decoration: underline;
+   font-weight: bold;
+}
+
+.TabLink
+{
+   font-family: verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 12px;
+   color: #FFFFFF;
+   text-decoration: none;
+   font-weight: bold;
+}
+
+.TabLink:link
+{
+   color: #FFFFFF;
+   text-decoration: none;
+   font-weight: bold;
+}
+
+.TabLink:visited
+{
+   color: #FFFFFF;
+   text-decoration: none;
+   font-weight: bold;
+}
+
+.TabLink:active
+{
+   color: #99CCFF;
+   text-decoration: none;
+   font-weight: bold;
+}
+
+.TabLink:hover
+{
+   color: #99CCFF;
+   text-decoration: none;
+   font-weight: bold;
+}
+
+.BodyHead
+{
+   font-family: helvetica, helvetica, arial, sans-serif;
+   font-size: 10pt;
+   color: #888888;
+}
+
+.BodyText
+{
+   font-family: Tahoma, helvetica, helvetica, arial, sans-serif;
+   font-size: 10pt;
+}
+
+.BodyEmphasis
+{
+   font-family: helvetica, helvetica, arial, sans-serif;
+   font-size: 10pt;
+   font-weight: bold;
+}
+
+.BodyWhite
+{
+   font-family: helvetica, helvetica, arial, sans-serif;
+   font-size: 10pt;
+   color: #FFFFFF;
+}
+
+.BodyTitle
+{
+   font-family: helvetica, arial, sans-serif;
+   font-size: 20px;
+   color: #888888;
+   font-weight: bold;
+}
+
+.BodySubTitle
+{
+   font-family: Tahoma, helvetica, arial, serif;
+   font-size: 12pt;
+   color: #FFFFFF;
+   font-weight: bold;
+}
+
+.BodySubTitleNote
+{
+   font-family: Tahoma, helvetica, arial, serif;
+   font-size: 12pt;
+   color: #FFFFFF;
+   font-weight: normal;
+}
+
+.Emphasis
+{
+   font-family: helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   color: #000000;
+   font-weight: bold;
+   text-decoration: none;
+}
+
+.EmphasisSmall
+{
+   font-family: Tahoma, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   color: #000000;
+   font-weight: bold;
+   text-decoration: none;
+}
+
+.Foot
+{
+   font-family: verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 8pt;
+   color: #FFFFFF;
+}
+
+.BlueTitle
+{
+   font-family: "times new roman", serif;
+   font-size: 18pt;
+   color: #888888;
+   font-weight: normal;
+}
+
+.BlueBigTitle
+{
+   font-family: helvetica, arial, sans-serif;
+   font-size: 14pt;
+   color: #888888;
+   font-weight: bold;
+}
+
+.BlueSubTitle
+{
+   font-family: helvetica, arial, serif;
+   font-size: 10pt;
+   color: #888888;
+   font-weight: bold;
+}
+
+.BlueSmallTitle
+{
+   font-family: helvetica, arial, sans-serif;
+   font-size: 12pt;
+   color: #888888;
+   font-weight: bold;
+}
+
+.BlueMenuTitle
+{
+   font-family: "times new roman", serif;
+   font-size: 18pt;
+   color: #888888;
+   font-weight: normal;
+   text-decoration: underline;
+}
+
+.Title
+{
+   font-family: helvetica, helvetica, arial, sans-serif;
+   font-size: 13pt;
+   font-weight: bold;
+}
+
+.MenuTitle
+{
+   font-family: helvetica, helvetica, arial, sans-serif;
+   text-decoration: none;
+   font-size: 9pt;
+   color: #000000;
+}
+
+.IconLink
+{
+   font-family: helvetica, helvetica, arial, sans-serif;
+   text-decoration: none;
+   font-size: 9pt;
+   color: #415D72;
+   font-weight: bold;
+}
+
+.IconTopLink
+{
+   font-family: helvetica, helvetica, arial, sans-serif;
+   text-decoration: none;
+   font-size: 9pt;
+   color: #FFFFFF;
+   font-weight: bold;
+}
+
+.IconLink:link
+{
+   font-family: helvetica, helvetica, arial, sans-serif;
+   text-decoration: none;
+   font-size: 9pt;
+   color: #415D72;
+   font-weight: bold;
+}
+
+.IconLink:visited
+{
+   font-family: helvetica, helvetica, arial, sans-serif;
+   text-decoration: none;
+   font-size: 9pt;
+   color: #415D72;
+   font-weight: bold;
+}
+
+.IconLink:hover
+{
+   font-family: helvetica, helvetica, arial, sans-serif;
+   text-decoration: underline;
+   font-size: 9pt;
+   color: #415D72;
+   font-weight: bold;
+}
+
+.IconLink:active
+{
+   font-family: helvetica, helvetica, arial, sans-serif;
+   text-decoration: underline;
+   font-size: 9pt;
+   color: #415D72;
+   font-weight: bold;
+}
+
+.StatusMessage
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 13pt;
+   font-weight: bold;
+   color: #5C798F; /*C.1a was 660000*/
+   background-color: #efefef;
+   white-space: nowrap;
+   text-align: left;
+   padding-left: 20;
+   padding-right: 8;
+}
+
+/* 1.1d Start */
+.ProgressTable
+{
+   background-color: #fff; /*C.1a was E3E3B3*/;
+   background-image: url("common/progress-light.gif");
+   background-repeat: repeat-x;
+   border-color: #5C798F;
+   border-style: solid;
+   border-width: 1px;
+   width: 80%;
+}
+
+.ProgressBar
+{
+   background-color: #5C798F; /*C.1a was 660000*/
+   background-image: url("common/progress-dark.gif");
+   background-repeat: repeat-x;
+   color: white;
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 10pt;
+   font-weight: bold;
+}
+
+.ProgressBarZero
+{
+   background-color: #fff; /*C.1a was E3E3B3*/;
+   background-image: url("common/progress-light.gif");
+   background-repeat: repeat-x;
+   color: black;
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 10pt;
+   font-weight: bold;
+}
+
+.ProgressTitle
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 10pt;
+   font-weight: bold;
+   color: #5C798F; /*C.1a was 660000*/
+   background-color: #FFFFFF;
+   white-space: nowrap;
+   width: 100%;
+   text-align: center;
+   padding-left: 2px;
+   padding-right: 10px;
+}
+
+.ProgressSubTitle
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 10pt;
+   font-weight: bold;
+   color: #5C798F; /*C.1a was 660000*/
+   background-color: #FFFFFF;
+   white-space: nowrap;
+   width: 90px;
+   text-align: left;
+   padding-left: 4px;
+   padding-right: 4px;
+}
+
+/* 1.1d End */
+/* 1.1e Start */
+.GPABodyBackground
+{
+   font-family: helvetica, helvetica, arial, sans-serif;
+   background-color: #fff;
+}
+
+.GPAFormTitle
+{
+   font-family: Tahoma, helvetica, arial, sans-serif;
+   font-size: 10pt;
+   color: #5C798F; /*C.1a was 660000*/
+   font-weight: bold;
+}
+
+.GPAFormTitle:hover
+{
+   font-family: Tahoma, helvetica, arial, sans-serif;
+   font-size: 10pt;
+   color: #5C798F; /*C.1a was 660000*/
+   font-weight: bold;
+   text-decoration: underline;
+}
+
+.GPAFormTitle:link
+{
+   font-family: Tahoma, helvetica, arial, sans-serif;
+   font-size: 10pt;
+   color: #5C798F; /*C.1a was 660000*/
+   font-weight: bold;
+   text-decoration: underline;
+}
+
+.GPAFormTitle:visited
+{
+   font-family: Tahoma, helvetica, arial, sans-serif;
+   font-size: 10pt;
+   color: #5C798F; /*C.1a was 660000*/
+   font-weight: bold;
+   text-decoration: underline;
+}
+
+.GPAFormTitle:active
+{
+   font-family: Tahoma, helvetica, arial, sans-serif;
+   font-size: 10pt;
+   color: #5C798F; /*C.1a was 660000*/
+   font-weight: bold;
+   text-decoration: underline;
+}
+
+.GPADescriptionPageText
+{
+   font-family: Tahoma, helvetica, arial, sans-serif;
+   font-size: 10pt;
+   color: #000000;
+}
+
+.GPAInputText
+{
+   font-family: Tahoma, "MS Sans Serif", helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: bold;
+   color: #5C798F; /*C.1a was 660000*/
+   text-align: right;
+   background-color: #FFFFFF;
+}
+
+.GPAClassInputText
+{
+   font-family: Tahoma, "MS Sans Serif", helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: bold;
+   color: #5C798F; /*C.1a was 660000*/
+   background-color: #FFFFFF;
+}
+
+.GPAErrorLabel
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: bold;
+   color: #5C798F; /*C.1a was 660000*/
+   background-color: #fff;
+   width: 1%;
+   padding-left: 8;
+   text-align: left;
+}
+
+.GPAErrorData
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: normal;
+   color: #000000;
+   background-color: #fff;
+   width: 15%;
+   text-align: left;
+}
+
+.GPATableDataMessageLeft
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: bold;
+   white-space: nowrap;
+   color: #5C798F; /*C.1a was 660000*/
+   background-color: #fff;
+   text-align: left;
+}
+
+.GPATableDataMessageRight
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: bold;
+   white-space: nowrap;
+   color: #5C798F; /*C.1a was 660000*/
+   background-color: #fff;
+   text-align: right;
+}
+
+.GPATableDataMessageCenter
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 11pt;
+   font-weight: bold;
+   color: #5C798F; /*C.1a was 660000*/
+   background-color: #fff;
+   width: 15%;
+   text-align: center;
+   padding-left: 8;
+   padding-right: 8;
+}
+
+.GPAGradResultsTable
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: bold;
+   color: #5C798F; /*C.1a was 660000*/
+   background-color: #fff;
+   white-space: nowrap;
+   width: 100%;
+   text-align: left;
+   padding-right: 2;
+   padding-left: 2;
+}
+
+.GPAResultHR
+{
+   background-color: #fff; /*C.1a was E3E3B3*/;
+}
+
+.GPATermCurrentCellLeft
+{
+   font-family: Tahoma, helvetica, helvetica, arial, sans-serif;
+   font-size: 14px;
+   font-weight: bold;
+   text-align: left;
+   color: #5C798F; /*C.1a was 660000*/
+}
+
+.GPATermCurrentCellRight
+{
+   font-family: Tahoma, helvetica, helvetica, arial, sans-serif;
+   font-size: 14px;
+   font-weight: bold;
+   text-align: right;
+   color: #5C798F; /*C.1a was 660000*/
+}
+
+.GPATermProspectiveHeader
+{
+   font-family: Tahoma, helvetica, helvetica, arial, sans-serif;
+   font-size: 16px;
+   font-weight: bold;
+   text-align: left;
+   color: #5C798F; /*C.1a was 660000*/
+   padding-left: 2px;
+   padding-right: 2px;
+   background-color: #efefef;
+}
+
+.GPATermProspectiveHeaderCenter
+{
+   font-family: Tahoma, helvetica, helvetica, arial, sans-serif;
+   font-size: 16px;
+   font-weight: bold;
+   text-align: center;
+   color: #5C798F; /*C.1a was 660000*/
+   padding-left: 2px;
+   padding-right: 2px;
+   background-color: #efefef;
+}
+
+.GPATermProspectiveCell
+{
+   font-family: Tahoma, helvetica, helvetica, arial, sans-serif;
+   font-size: 12px;
+   font-weight: bold;
+   text-align: left;
+   color: #5C798F; /*C.1a was 660000*/
+   padding-left: 2px;
+   padding-right: 2px;
+}
+
+.GPATermProspectiveCellCenter
+{
+   font-family: Tahoma, helvetica, helvetica, arial, sans-serif;
+   font-size: 12px;
+   font-weight: bold;
+   text-align: center;
+   color: #5C798F; /*C.1a was 660000*/
+}
+
+.GPATermResultCellBig
+{
+   font-family: Tahoma, helvetica, helvetica, arial, sans-serif;
+   font-size: 18px;
+   font-weight: bold;
+   text-align: left;
+   color: #5C798F; /*C.1a was 660000*/
+   background-color: #FFFFFF;
+}
+
+.GPATermResultCellSmall
+{
+   font-family: Tahoma, helvetica, helvetica, arial, sans-serif;
+   font-size: 12px;
+   font-weight: bold;
+   text-align: center;
+   color: #5C798F; /*C.1a was 660000*/
+}
+
+/* 1.1e End */
+.StuTableTitlePlanner
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: bold;
+   color: #5C798F; /*C.1a was 660000*/
+   background-color: #D2E2EE;
+   white-space: nowrap;
+   width: 3%;
+   text-align: left;
+   padding-right: 8px;
+   padding-left: 8px;
+   border-bottom: solid 2px white;
+   border-left: solid 2px white;
+}
+
+.PlannerTermClassTable td
+{
+   padding: 3px;
+}
+
+.PlannerClassTableContainer
+{
+   border-collapse: collapse;
+   border: 1px solid #ffffff;
+}
+
+.PlannerClassTableContainerHover
+{
+   border-collapse: collapse;
+   border: 1px solid #aaaaaa;
+   background: #dfdfdf;
+   padding: 3px;
+}
+
+.PlannerClassTableContainerHover td
+{
+   padding: 3px;
+}
+
+.PlannerTermTable tr td
+{
+   padding: 2px;
+}
+
+.StuTableDataPlanner
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: normal;
+   color: #000000;
+   background-color: #efefef;
+   width: 15%;
+   /*white-space: nowrap;*/
+   text-align: left;
+   padding-left: 8px;
+   padding-right: 4px;
+   border-bottom: solid 2px white;
+}
+
+.StuTableDataPlannerHighlight
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 9pt;
+   font-weight: normal;
+   color: #CC0000;
+   background-color: #FFFFE0;
+   width: 15%;
+   /*white-space: nowrap;*/
+   text-align: left;
+   padding-left: 8px;
+   padding-right: 4px;
+   border-bottom: solid 2px white;
+}
+
+.PlannerButton
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 8pt;
+   font-weight: bold;
+   color: #5C798F; /*C.1a was 660000*/
+   background-color: #efefef;
+   text-align: center;
+   padding-left: 8px;
+   padding-right: 8px;
+   background-image: url("common/bg-button.gif");
+   border: single 1px #fff;
+   width: 110px;
+   height: 20px;
+}
+
+.PlannerButton2
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   font-size: 8pt;
+   font-weight: bold;
+   color: #5C798F; /*C.1a was 660000*/
+   background-color: #FFFFFF;
+   text-align: center;
+   padding-left: 8px;
+   padding-right: 8px;
+   background-image: url("common/bg-button.gif");
+   border: single 1px #fff;
+   width: 110px;
+   height: 20px;
+}
+
+.PlannerTitleData
+{
+   font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+   font-size: 9pt;
+   font-weight: bold;
+   color: #415D72; /*C.1a was 660000*/;
+   background-color: #efefef;
+   xxwidth: 100%;
+   xxtext-align: left;
+   padding-left: 2;
+   padding-right: 2;
+}
+
+.PlannerTitleInput
+{
+   font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+   font-size: 10pt;
+   font-weight: bold;
+   color: #000000;
+   background-color: #FFFFFF;
+   xxwidth: 100%;
+   text-align: left;
+   padding-left: 2px;
+   padding-right: 2px;
+}
+
+.PlannerTitleInputGray
+{
+   font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+   font-size: 10pt;
+   font-weight: bold;
+   color: #000000;
+   background-color: #EFEFEF;
+   xxwidth: 100%;
+   text-align: left;
+   padding-left: 2px;
+   padding-right: 2px;
+}
+
+.PlannerCheckbox
+{
+   vertical-align: top;
+   horizontal-align: right;
+   padding-left: 8;
+   padding-right: 0;
+   width: 15px;
+   border-width: 0px;
+   padding-right: 4px;
+   height: 21px;
+}
+
+.TemplateSearchLabel
+{
+   padding-left: 8px;
+}
+
+.SEPTermViewHeader
+{
+   font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+   font-size: 10pt;
+   font-weight: bold;
+   color: #415D72; /*C.1a was 660000*/;
+   background-color: #efefef;
+   XXtext-align: center;
+   padding-left: 8px;
+   padding-right: 8px;
+   width: 100%;
+}
+
+.SEPViewClass
+{
+   font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+   font-size: 10pt;
+   font-weight: normal;
+   color: #415D72; /*C.1a was 660000*/;
+   background-color: #ffffff;
+   xxtext-align: center;
+   padding-left: 8px;
+   padding-right: 8px;
+   width: 120px;
+}
+
+.SEPViewCredit
+{
+   font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+   font-size: 10pt;
+   font-weight: normal;
+   color: #415D72; /*C.1a was 660000*/;
+   background-color: #ffffff;
+   text-align: center;
+   padding-left: 8px;
+   padding-right: 8px;
+   width: 70px;
+}
+
+.SEPViewCompareHeader
+{
+   font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+   font-size: 10pt;
+   font-weight: bold;
+   color: #415D72; /*C.1a was 660000*/;
+   background-color: #ffffff;
+   xxtext-align: center;
+   padding-left: 8px;
+   padding-right: 8px;
+   width: 120px;
+}
+
+.SEPViewCompareMatch
+{
+   font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+   font-size: 10pt;
+   font-weight: normal;
+   color: #415D72; /*C.1a was 660000*/;
+   background-color: #EFEFEF;
+   xxtext-align: center;
+   padding-left: 8px;
+   padding-right: 8px;
+   width: 120px;
+}
+
+.SEPViewCompareNoMatch
+{
+   font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+   font-size: 10pt;
+   font-weight: normal;
+   color: #415D72; /*C.1a was 660000*/;
+   background-color: #ffffff;
+   xxtext-align: center;
+   padding-left: 8px;
+   padding-right: 8px;
+   width: 120px;
+}
+
+.SEPViewClassTotal
+{
+   font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+   font-size: 10pt;
+   font-weight: bold;
+   color: #415D72; /*C.1a was 660000*/;
+   background-color: #efefef;
+   XXtext-align: center;
+   padding-left: 8px;
+   padding-right: 8px;
+   width: 100px;
+}
+
+.SEPViewCreditTotal
+{
+   font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+   font-size: 10pt;
+   font-weight: bold;
+   color: #415D72; /*C.1a was 660000*/;
+   background-color: #efefef;
+   text-align: center;
+   padding-left: 8px;
+   padding-right: 8px;
+   width: 70px;
+}
+
+.SEPTermEdit
+{
+   font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+   font-size: 10pt;
+   font-weight: bold;
+   color: #415D72; /*C.1a was 660000*/;
+   background-color: #efefef;
+   XXtext-align: center;
+   XXXXpadding-left: 8;
+   XXpadding-right: 30;
+   width: 100%;
+}
+
+.PlannerCourseEdit
+{
+   font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+   font-size: 8pt;
+   font-weight: normal;
+   color: #000000;
+   background-color: #FFFFFF;
+   text-align: left;
+   padding-left: 2px;
+   padding-right: 0;
+}
+
+.PlannerCourseEditActive
+{
+   font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+   font-size: 8pt;
+   font-weight: normal;
+   color: #000000;
+   background-color: #efefef;
+   text-align: left;
+   padding-left: 2px;
+   padding-right: 0;
+}
+
+.PlannerCourseView
+{
+   font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+   font-size: 8pt;
+   font-weight: normal;
+   color: #777777;
+   background-color: #F4F4F4;
+   text-align: left;
+   padding-left: 2px;
+   padding-right: 0;
+}
+
+.PlannerCreditsEdit
+{
+   font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+   font-size: 8pt;
+   font-weight: normal;
+   color: #000000;
+   background-color: #FFFFFF;
+   text-align: left;
+   padding-left: 2px;
+   padding-right: 0;
+   width: 40px;
+}
+
+.PlannerCreditsEditActive
+{
+   font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+   font-size: 8pt;
+   font-weight: normal;
+   color: #000000;
+   background-color: #efefef;
+   text-align: left;
+   padding-left: 2px;
+   padding-right: 0;
+   width: 40px;
+}
+
+.PlannerCreditsView
+{
+   font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+   font-size: 8pt;
+   font-weight: normal;
+   color: #777777;
+   background-color: #F4F4F4;
+   text-align: left;
+   padding-left: 2px;
+   padding-right: 0;
+   width: 40px;
+}
+
+.PlannerTermTotalLit_edit
+{
+   font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+   font-size: 9pt;
+   font-weight: bold;
+   color: #415D72; /*C.1a was 660000*/;
+   xxbackground-color: #EAEAEA;
+   text-align: right;
+   padding-left: 0;
+   padding-right: 5;
+}
+
+.CommentsTableEdit
+{
+   font-size: 10pt;
+   font-family: Tahoma, Helvetica, sans-serif;
+   color: #555;
+   padding: 2px;
+   border-color: #999 #ddd #ddd #999;
+   border-style: solid;
+   border-width: 0px;
+}
+
+.NotesTableTitle
+{
+   font-size: 11pt;
+   font-family: Tahoma, Helvetica, sans-serif;
+   color: #555;
+   padding-left: 2px;
+   padding-right: 2px;
+   border-color: #999 #ddd #ddd #999;
+   border-style: solid;
+   border-width: 0px;
+}
+
+.NotesTableTitleBorder
+{
+   font-size: 10pt;
+   font-family: Tahoma, Helvetica, sans-serif;
+   color: #555;
+   padding-left: 2px;
+   padding-right: 2px;
+   border-color: #999 #ddd #ddd #999;
+   border-style: solid;
+   border-width: 1px;
+}
+
+.TermCommentsView
+{
+   font-size: 10pt;
+   font-family: Tahoma, Helvetica, sans-serif;
+   color: #555;
+   padding-left: 2px;
+   padding-right: 2px;
+   border-color: #999 #ddd #ddd #999;
+   border-style: solid;
+   border-width: 1px;
+   width: 350px;
+}
+
+.TermComments
+{
+   font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+   font-size: 9pt;
+   font-weight: normal;
+   xxcolor: #415D72; /*C.1a was 660000*/;
+   xxbackground-color: #efefef;
+   text-align: left;
+   xxpadding-top: 5;
+   xxpadding-left: 12;
+   xxpadding-right: 12;
+   xxpadding-bottom: 5;
+}
+
+.TermCommentsActive
+{
+   font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+   font-size: 9pt;
+   font-weight: normal;
+   xxcolor: #415D72; /*C.1a was 660000*/;
+   background-color: #efefef;
+   text-align: left;
+   xxpadding-top: 5;
+   xxpadding-left: 12;
+   xxpadding-right: 12;
+   xxpadding-bottom: 5;
+}
+
+.PlannerTermHeader
+{
+   font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+   font-size: 10pt;
+   font-weight: bold;
+   color: #415D72; /*C.1a was 660000*/;
+   background-color: #EFEFEF;
+   width: 100px;
+   text-align: left;
+   padding-left: 8px;
+   padding-right: 30px;
+   border-color: #999 #ddd #ddd #999;
+   border-style: solid;
+   border-width: 1px;
+}
+
+.PlannerTermEntry
+{
+   font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+   font-size: 9pt;
+   font-weight: normal;
+   color: #415D72; /*C.1a was 660000*/;
+   width: 100px;
+   text-align: left;
+   padding-left: 8px;
+   padding-right: 30px;
+   border-color: #999 #ddd #ddd #999;
+   border-style: solid;
+   border-width: 1px;
+}
+
+.ChangePassword
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   background-color: #fff;
+}
+
+.StuFindSelect
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   width: 250px;
+}
+.TemplateFindSelect
+{
+   font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+   width: 350px;
+}
+
+
+.bgDark100
+{
+   background-color: #ECF4D1;
+}
+
+.bgDark99
+{
+   background-color: #CEDDEA;
+}
+
+.bgDark98
+{
+   background-color: #CEDDEA;
+}
+
+.bgDark0
+{
+   background-color: #F0E0CF;
+}
+
+.bgLight100
+{
+   background-color: #FFFFE0;
+}
+
+.bgLight99
+{
+   background-color: #E6F4FF;
+}
+
+.bgLight98
+{
+   background-color: #E6F4FF;
+}
+
+.bgLight0
+{
+   background-color: #FEEEDD;
+}
+
+#divnavigation
+{
+   float: left;
+   width: 100%;
+   background: #fff url("common/bg.gif") repeat-x bottom;
+   line-height: normal;
+   margin: 0;
+}
+
+#navigation
+{
+   font: bold 12px Tahoma, Geneva, sans-serif;
+   letter-spacing: 0.08em;
+   margin: 0;
+   padding: 0;
+}
+
+#navigation a
+{
+   color: #757575;
+   background: #efefef url(common/left-tab.gif) left top no-repeat;
+   text-decoration: none;
+   padding-left: 10px;
+   border-bottom: solid 1px #B7BABC;
+}
+
+#navigation a span
+{
+   background: url(common/right-tab.gif) right top no-repeat;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   padding-right: 10px;
+}
+
+#navigation a, #navigation a span
+{
+   display: block;
+   float: left;
+   list-style: none;
+}
+
+/* Hide from IE5-Mac \*/
+#navigation a, #navigation a span
+{
+   float: none
+}
+
+/* End hide */
+.selected
+{
+   color: #474747;
+}
+
+#navigation .selected a
+{
+   color: #474747;
+   background: #fff url(common/left-tab-hover.gif) left top no-repeat;
+   padding-left: 10px;
+   border-bottom: solid 1px #ffffff;
+}
+
+#navigation .selected span
+{
+   background: url(common/right-tab-hover.gif) right top no-repeat;
+   padding-right: 10px;
+}
+
+#navigation ul
+{
+   list-style: none;
+   padding: 0;
+   margin: 0;
+}
+
+#navigation li
+{
+   list-style: none;
+   float: left;
+   margin: 0;
+   margin-left: 8px;
+}
+
+ul#verticalnav
+{
+   font: bold 12px Tahoma, Geneva, sans-serif;
+   /* width: 10em; */
+   width: auto;
+   margin: 0;
+   padding: 0;
+   padding-left: 8px;
+   margin-top: 0px;
+}
+
+ul#verticalnav li
+{
+   list-style: none;
+   background-color: #fff;
+   text-align: left;
+   margin: 0;
+   width: 128px;
+   border-bottom: 1px solid #ccc;
+}
+
+ul#verticalnav li a
+{
+   display: block;
+   text-decoration: none;
+   /* padding: .25em; */
+   padding-left: 5px;
+   padding-top: 14px;
+   padding-bottom: 15px;
+   padding-right: 12px;
+   letter-spacing: 1pt;
+   /*
+    padding:4px;
+    */
+   vertical-align: middle;
+   width: 112px; /* auto */
+}
+
+#verticalnav > ul a
+{
+   width: auto;
+}
+
+/*ul#verticalnav a:link, ul#verticalnav a:visited { color: #bbb; }*/
+ul#verticalnav a:hover
+{
+   color: #5B93BE;
+}
+
+/*, ul#verticalnav a:active*/
+ul#verticalnav a:hover
+{
+   background-color: #fff;
+}
+
+ul#verticalnav .selected a
+{
+   color: #275690;
+   background-color: #fff; /*efefef;*/
+}
+
+ul#verticalnav .selected a
+{
+   color: #275690;
+   /* background-color: #fff; */
+   background-image: url("common/list-arrow.gif");
+   /* background-image: url("common/list-arrow-wide.gif"); */
+   background-position: right;
+   background-repeat: no-repeat;
+}
+
+ul#verticalnav .notselected a
+{
+   color: #bbb;
+}
+
+.SOCStuHead
+{
+   background-color: #415D72; /*C.1a was 660000*/
+}
+
+.SOCStuHeadTitle
+{
+   font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+   font-size: 10pt;
+   color: #FFFFFF;
+   font-weight: bold;
+}
+
+.SOCStuHeadPrivacy
+{
+   font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+   font-size: 8pt;
+   color: #415D72;
+   font-weight: normal;
+   background-color: #FFFFFF;
+}
+
+.SOCAuditTable
+{
+   background-color: #B3B3B3;
+}
+
+.SOCAuditHeadBorderDark
+{
+   background-color: #415D72; /*C.1a was 660000*/
+   height: 1px;
+}
+
+.SOCAuditHeadBorderLight
+{
+   background-color: #ddd; /*C.1a was 9E2828*/;
+   height: 1px;
+}
+
+.SOCFooter
+{
+   font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+   font-size: 8pt;
+   color: #415D72;
+   font-weight: normal;
+   background-color: #FFFFFF;
+   padding-left: 4px;
+   padding-right: 4px;
+}
+
+.SOCStuTableTitle
+{
+   font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+   font-size: 9pt;
+   font-weight: bold;
+   color: #415D72; /*C.1a was 660000*/
+   background-color: #efefef;
+   white-space: nowrap;
+   width: 3%;
+   text-align: left;
+   padding-left: 8px;
+   padding-right: 8px;
+}
+
+.SOCStuTableData
+{
+   font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+   font-weight: normal;
+   color: #000000;
+   background-color: #FFFFFF;
+   XXwidth: 15%;
+   text-align: left;
+   padding-left: 8px;
+   padding-right: 8px;
+}
+
+.SOCStuTableDataSmall
+{
+   font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+   font-size: 9pt;
+   font-weight: normal;
+   color: #000000;
+   background-color: #FFFFFF;
+   width: 40%;
+   text-align: left;
+   padding-left: 8px;
+   padding-right: 8px;
+}
+
+.SOCMoreInformationData
+{
+   font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+   font-size: 8pt;
+   color: #415D72;
+   font-weight: normal;
+   background-color: #FFFFFF;
+   padding-left: 8px;
+   padding-right: 8px;
+}
+
+.SOCHeaderTable
+{
+   background-color: #FFFFFF; /*C.1a was E3E3B3*/;
+}
+
+.SOCTopColumnHeader
+{
+   font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+   background-color: #efefef;
+   color: #415D72;
+   text-align: center;
+   font-size: 10pt;
+   padding-top: 4px;
+   padding-bottom: 4px;
+   padding-left: 8px;
+   padding-right: 8px;
+}
+
+.SOC_CourseNumber_Header
+{
+   font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+   background-color: #FFFFFF;
+   color: #415D72;
+   text-align: left;
+   font-size: 9pt;
+   font-weight: bold;
+   width: 10%;
+   padding-left: 2px;
+   padding-right: 2px;
+}
+
+.SOC_CourseTitle_Header
+{
+   font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+   background-color: #FFFFFF;
+   color: #415D72;
+   text-align: left;
+   font-weight: bold;
+   font-size: 9pt;
+   width: 39%;
+   padding-left: 2px;
+   padding-right: 2px;
+}
+
+.SOC_RequiredHours_Header
+{
+   font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+   background-color: #FFFFFF;
+   color: #415D72;
+   text-align: center;
+   font-weight: bold;
+   font-size: 9pt;
+   width: 1%;
+   padding-left: 2px;
+   padding-right: 2px;
+}
+
+.SOC_AwardedHours_Header
+{
+   font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+   background-color: #FFFFFF;
+   color: #415D72;
+   text-align: center;
+   font-weight: normal;
+   font-size: 9pt;
+   width: 50px;
+   padding-left: 2px;
+   padding-right: 2px;
+}
+
+.SOC_HoursNeeded_Header
+{
+   font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+   background-color: #FFFFFF;
+   color: #415D72;
+   text-align: center;
+   font-weight: bold;
+   font-size: 9pt;
+   xwidth: 20px;
+   padding-left: 2px;
+   padding-right: 2px;
+}
+
+.SOC_CourseCat_Header
+{
+   font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+   background-color: #FFFFFF;
+   color: #415D72;
+   text-align: center;
+   font-weight: bold;
+   font-size: 9pt;
+   xwidth: 20px;
+   padding-left: 2px;
+   padding-right: 2px;
+}
+
+.SOC_Notes_Header
+{
+   font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+   background-color: #FFFFFF;
+   color: #415D72;
+   text-align: center;
+   font-weight: normal;
+   font-size: 9pt;
+   xwidth: 20px;
+   padding-left: 2px;
+   padding-right: 2px;
+}
+
+.SOC_CourseNumber_Data
+{
+   font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+   background-color: #FFFFFF;
+   color: #415D72;
+   text-align: left;
+   font-size: 9pt;
+   font-weight: bold;
+   width: 10%;
+   padding-left: 2px;
+   padding-right: 2px;
+}
+
+.SOC_CourseTitle_Data
+{
+   font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+   background-color: #FFFFFF;
+   color: #415D72;
+   text-align: left;
+   font-weight: bold;
+   font-size: 9pt;
+   width: 39%;
+   padding-left: 2px;
+   padding-right: 2px;
+}
+
+.SOC_RequiredHours_Data
+{
+   font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+   background-color: #FFFFFF;
+   color: #415D72;
+   text-align: center;
+   font-weight: bold;
+   font-size: 9pt;
+   width: 1%;
+   padding-left: 2px;
+   padding-right: 2px;
+}
+
+.SOC_AwardedHours_Data
+{
+   font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+   background-color: #FFFFFF;
+   color: #415D72;
+   text-align: center;
+   font-weight: normal;
+   font-size: 9pt;
+   width: 50px;
+   padding-left: 2px;
+   padding-right: 2px;
+}
+
+.SOC_HoursNeeded_Data
+{
+   font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+   background-color: #FFFFFF;
+   color: #415D72;
+   text-align: center;
+   font-weight: bold;
+   font-size: 9pt;
+   xwidth: 20px;
+   padding-left: 2px;
+   padding-right: 2px;
+}
+
+.SOC_CourseCat_Data
+{
+   font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+   background-color: #FFFFFF;
+   color: #415D72;
+   text-align: center;
+   font-weight: bold;
+   font-size: 9pt;
+   xwidth: 20px;
+   padding-left: 2px;
+   padding-right: 2px;
+}
+
+.SOC_Notes_Data
+{
+   font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+   background-color: #FFFFFF;
+   color: #415D72;
+   text-align: center;
+   font-weight: normal;
+   font-size: 9pt;
+   xwidth: 20px;
+   padding-left: 2px;
+   padding-right: 2px;
+}
+
+.SOC_GenedCourseNumber_Data
+{
+   font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+   background-color: #EEEEEE;
+   color: #415D72;
+   text-align: left;
+   font-size: 9pt;
+   font-weight: bold;
+   width: 10%;
+   padding-left: 2px;
+   padding-right: 2px;
+}
+
+.SOC_GenedCourseTitle_Data
+{
+   font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+   background-color: #EEEEEE;
+   color: #415D72;
+   text-align: left;
+   font-weight: bold;
+   font-size: 9pt;
+   width: 39%;
+   padding-left: 2px;
+   padding-right: 2px;
+}
+
+.SOC_GenedRequiredHours_Data
+{
+   font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+   background-color: #EEEEEE;
+   color: #415D72;
+   text-align: center;
+   font-weight: bold;
+   font-size: 9pt;
+   width: 1%;
+   padding-left: 2px;
+   padding-right: 2px;
+}
+
+.SOC_GenedAwardedHours_Data
+{
+   font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+   background-color: #EEEEEE;
+   color: #415D72;
+   text-align: center;
+   font-weight: normal;
+   font-size: 9pt;
+   width: 50px;
+   padding-left: 2px;
+   padding-right: 2px;
+}
+
+.SOC_GenedHoursNeeded_Data
+{
+   font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+   background-color: #EEEEEE;
+   color: #415D72;
+   text-align: center;
+   font-weight: bold;
+   font-size: 9pt;
+   xwidth: 20px;
+   padding-left: 2px;
+   padding-right: 2px;
+}
+
+.SOC_GenedCourseCat_Data
+{
+   font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+   background-color: #EEEEEE;
+   color: #415D72;
+   text-align: center;
+   font-weight: bold;
+   font-size: 9pt;
+   xwidth: 20px;
+   padding-left: 2px;
+   padding-right: 2px;
+}
+
+.SOC_GenedNotes_Data
+{
+   font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+   background-color: #EEEEEE;
+   color: #415D72;
+   text-align: center;
+   font-weight: normal;
+   font-size: 9pt;
+   xwidth: 20px;
+   padding-left: 2px;
+   padding-right: 2px;
+}
+
+.SOC_CourseNumber_Total
+{
+   font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+   background-color: #efefef;
+   color: #415D72;
+   text-align: left;
+   font-size: 9pt;
+   font-weight: bold;
+   width: 10%;
+   padding-left: 2px;
+   padding-right: 2px;
+}
+
+.SOC_CourseTitle_Total
+{
+   font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+   background-color: #efefef;
+   color: #415D72;
+   text-align: left;
+   font-weight: bold;
+   font-size: 9pt;
+   width: 39%;
+   padding-left: 2px;
+   padding-right: 2px;
+}
+
+.SOC_RequiredHours_Total
+{
+   font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+   background-color: #efefef;
+   color: #415D72;
+   text-align: center;
+   font-weight: bold;
+   font-size: 9pt;
+   width: 1%;
+   padding-left: 2px;
+   padding-right: 2px;
+}
+
+.SOC_AwardedHours_Total
+{
+   font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+   background-color: #efefef;
+   color: #415D72;
+   text-align: center;
+   font-weight: normal;
+   font-size: 9pt;
+   width: 50px;
+   padding-left: 2px;
+   padding-right: 2px;
+}
+
+.SOC_HoursNeeded_Total
+{
+   font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+   background-color: #efefef;
+   color: #415D72;
+   text-align: center;
+   font-weight: bold;
+   font-size: 9pt;
+   xwidth: 20px;
+   padding-left: 2px;
+   padding-right: 2px;
+}
+
+.SOC_CourseCat_Total
+{
+   font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+   background-color: #efefef;
+   color: #415D72;
+   text-align: center;
+   font-weight: bold;
+   font-size: 9pt;
+   xwidth: 20px;
+   padding-left: 2px;
+   padding-right: 2px;
+}
+
+.SOC_Notes_Total
+{
+   font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+   background-color: #efefef;
+   color: #415D72;
+   text-align: center;
+   font-weight: normal;
+   font-size: 9pt;
+   xwidth: 20px;
+   padding-left: 2px;
+   padding-right: 2px;
+}
+
+.SOC_BlankRow
+{
+   font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+   background-color: #415D72;
+   color: #415D72;
+   text-align: center;
+   font-weight: normal;
+   font-size: 9pt;
+}
+
+/*
+ div.select {
+ cursor: pointer;
+ }
+ 
+ div.select div {
+ height: 26px;
+ background-image: url(common/select_bg.png);
+ background-repeat: no-repeat;
+ background-position: right;
+ padding-right: 20px;
+ background-color: #FFFFFF;
+ border-color: #999 #ddd #ddd #999;
+ border-style: solid;
+ border-width:1px;
+ }
+ div.select div p {
+ margin:0;
+ padding: 8px;
+ display: block;
+ }
+ div.select ul {
+ margin:0;
+ padding:0;
+ list-style:none;
+ width:auto;
+ background-color: #fff;
+ border:solid 1px #fff;
+ }
+ div.select li {
+ border-bottom: 1px solid #bbb;
+ color: #4d4d4d;
+ padding-left: 10px;
+ padding-top: 3px;
+ height: 18px;
+ cursor: pointer;
+ }
+ div.select li.active {
+ background-color: #5C798F;
+ color: #FFF;
+ }
+ */
+/*====================================================================*/
+/*====================================================================*/
+/*====================================================================*/
+/* When the page is printed these alternate styles will be used       */
+/*====================================================================*/
+/*====================================================================*/
+/*====================================================================*/
+@media print
+{ .StuHead
+   {background-color:
+      666666;
+}
+
+.StuTableTitle
+   {
+      font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+      font-size: 8px;
+      font-weight: bold;
+      color: #5C798F; /*C.1a was 660000*/
+      background-color: #efefef;
+      white-space: nowrap;
+      width: 3%;
+      text-align: left;
+      padding-right: 8;
+      padding-left: 8;
+}
+
+.StuTableData
+   {
+      font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+      font-size: 8px;
+      font-weight: normal;
+      color: #000000;
+      background-color: #FFFFFF;
+      width: 15%;
+      white-space: nowrap;
+      text-align: left;
+      padding-left: 8;
+      padding-right: 30;
+}
+
+.BlockHeader
+   {
+      font-family: helvetica, helvetica, arial, serif;
+      font-size: 10px;
+      font-weight: bold;
+      background-color: #5C798F; /*C.1a was 660000*/
+      color: #FFFFFF;
+      text-align: left;
+      padding-right: 2px;
+      padding-left: 2px;
+}
+
+.ExceptionHeader
+   {
+      font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+      font-size: 9px;
+      font-weight: bold;
+      color: #5C798F; /*C.1a was 660000*/
+      background-color: #efefef;
+      white-space: nowrap;
+      text-align: left;
+      padding-right: 8px;
+      padding-left: 8px;
+}
+
+.AuditExceptionData
+   {
+      font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+      font-size: 8px;
+      font-weight: normal;
+      color: #000000;
+      background-color: #FFFFFF;
+      /*white-space: nowrap;*/
+      text-align: left;
+      padding-left: 8px;
+      padding-right: 8px;
+}
+
+.AuditNotesHeader
+   {
+      font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+      font-size: 9px;
+      font-weight: bold;
+      color: #5C798F; /*C.1a was 660000*/
+      background-color: #efefef;
+      white-space: nowrap;
+      text-align: left;
+      padding-right: 8px;
+      padding-left: 8px;
+}
+
+.AuditNotesData
+   {
+      font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+      font-size: 8px;
+      font-weight: normal;
+      color: #000000;
+      background-color: #FFFFFF;
+      text-align: left;
+      padding-left: 8px;
+      padding-right: 8PX;
+}
+
+.SectionCourseKey
+   {
+      font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+      font-size: 8px;
+      font-weight: bold;
+      color: #FFFFFF;
+      white-space: nowrap;
+      text-align: right;
+      padding-right: 8px;
+      padding-left: 0px;
+}
+
+.SectionCourseTitle
+   {
+      font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+      font-size: 8px;
+      font-weight: normal;
+      background-color: #FFFFFF;
+      white-space: nowrap;
+      text-align: left;
+      padding-left: 0px;
+      padding-right: 8px;
+}
+
+.SectionCourseGrade
+   {
+      font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+      font-size: 8px;
+      font-weight: normal;
+      background-color: #FFFFFF;
+      white-space: nowrap;
+      text-align: left;
+      padding-left: 0px;
+      padding-right: 8px;
+}
+
+.SectionCourseCredits
+   {
+      font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+      font-size: 8px;
+      font-weight: normal;
+      background-color: #FFFFFF;
+      white-space: nowrap;
+      text-align: left;
+      padding-left: 0px;
+      padding-right: 8px;
+}
+
+.SectionCourseTerm
+   {
+      font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+      font-size: 8px;
+      font-weight: normal;
+      background-color: #FFFFFF;
+      white-space: nowrap;
+      text-align: left;
+      padding-left: 0px;
+      padding-right: 8px;
+}
+
+.SectionTransferLine
+   {
+      font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+      font-size: 8px;
+      font-weight: normal;
+      background-color: #FFFFFF;
+      white-space: nowrap;
+      text-align: left;
+      padding-left: 20px;
+      padding-right: 8px;
+      padding-top: 3px;
+      padding-bottom: 3px;
+}
+
+.ClassesAppliedClasses
+   {
+      font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+      font-size: 8px;
+      font-weight: bold;
+      background-color: #FFFFFF;
+      width: 100px;
+      padding-right: 3px;
+      padding-left: 3px;
+      padding-top: 3px;
+      padding-bottom: 3px;
+}
+
+.Blocks
+   {
+      font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+      font-size: 9pt;
+      color: #FFFFFF;
+}
+
+.BlockHeadTitle
+   {
+      font-family: helvetica, helvetica, arial, serif;
+      font-size: 10px;
+      color: #FFFFFF;
+      font-weight: bold;
+}
+
+.BlockHeadSubTitle
+   {
+      font-family: "arial,MS Sans Serif", verdana, helvetica, helvetica, arial, sans-serif;
+      font-size: 8px;
+      font-weight: bold;
+      color: #FFFFFF;
+      white-space: nowrap;
+      text-align: right;
+      padding-right: 8;
+      padding-left: 0;
+}
+
+.BlockHeadSubData
+   {
+      font-family: "arial,MS Sans Serif", verdana, helvetica, helvetica, arial, sans-serif;
+      font-size: 8px;
+      font-weight: normal;
+      color: #FFFFFF;
+      white-space: nowrap;
+      text-align: left;
+      padding-left: 0;
+      padding-right: 8;
+}
+
+.BlockRemarksData
+   {
+      font-family: helvetica, arial, verdana, sans-serif;
+      font-size: 8px;
+      font-weight: italic;
+      color: #5C798F; /*C.1a was 660000*/
+      text-align: left;
+      padding-left: 20;
+      padding-right: 8;
+}
+
+.BlockAdviceTitle
+   {
+      font-family: helvetica, arial, "MS Sans Serif", verdana, sans-serif;
+      font-size: 8px;
+      font-weight: bold;
+      color: #5C798F; /*C.1a was 660000*/
+      white-space: nowrap;
+      text-align: left;
+      padding-right: 8;
+      padding-left: 8;
+}
+
+.BlockAdviceData
+   {
+      font-family: helvetica, arial, "MS Sans Serif", verdana, sans-serif;
+      font-size: 8px;
+      font-weight: normal;
+      color: #5C798F; /*C.1a was 660000*/
+      white-space: wrap;
+      text-align: left;
+      padding-left: 0;
+      padding-right: 8;
+}
+
+.RuleLabelTitle
+   {
+      font-family: helvetica, arial, "MS Sans Serif", verdana, sans-serif;
+      font-size: 8px;
+      font-weight: bold;
+      background-color: #efefef;
+      color: #5C798F; /*C.1a was 660000*/
+      text-align: left;
+      padding-right: 8;
+      padding-left: 8;
+}
+
+.RuleLabelTitleNotNeeded
+   {
+      font-family: helvetica, arial, "MS Sans Serif", verdana, sans-serif;
+      font-size: 8px;
+      font-weight: bold;
+      color: #606060;
+      text-align: left;
+      padding-right: 8;
+      padding-left: 8;
+}
+
+.RuleLabelTitleNeeded
+   {
+      font-family: helvetica, arial, "MS Sans Serif", verdana, sans-serif;
+      font-size: 8px;
+      font-weight: bold;
+      color: #5C798F; /*C.1a was 660000*/
+      text-align: left;
+      padding-right: 8;
+      padding-left: 8;
+}
+
+.RuleLabelTitleNotNeededLeft
+   {
+      font-family: helvetica, arial, "MS Sans Serif", verdana, sans-serif;
+      font-size: 8px;
+      font-weight: bold;
+      color: #606060;
+      text-align: left;
+      padding-right: 8;
+      padding-left: 8;
+}
+
+.RuleLabelTitleNeededLeft
+   {
+      font-family: helvetica, arial, "MS Sans Serif", verdana, sans-serif;
+      font-size: 8px;
+      font-weight: bold;
+      color: #5C798F; /*C.1a was 660000*/
+      text-align: left;
+      padding-right: 8;
+      padding-left: 8;
+}
+
+.RuleRemarksData
+   {
+      font-family: helvetica, arial, "MS Sans Serif", verdana, sans-serif;
+      font-size: 8px;
+      font-weight: normal;
+      color: #5C798F; /*C.1a was 660000*/
+      text-align: left;
+      padding-left: 20;
+      padding-right: 8;
+}
+
+.RuleAdviceTitle
+   {
+      font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+      font-size: 8px;
+      font-weight: normal;
+      background-color: #FFFFFF;
+      color: #CC0000;
+      white-space: nowrap;
+      text-align: right;
+      padding-right: 8;
+      padding-left: 8;
+      width: 3%;
+}
+
+.RuleAdviceTitleNew
+   {
+      font-family: Tahoma, verdana, helvetica, helvetica, arial, sans-serif;
+      font-size: 8px;
+      font-weight: normal;
+      background-color: #FFFFFF;
+      color: #CC0000;
+      white-space: nowrap;
+      text-align: left;
+      padding-right: 8;
+      padding-left: 8;
+      width: 3%;
+      white-space: nowrap;
+}
+
+.RuleAdviceData
+   {
+      font-family: helvetica, arial, "MS Sans Serif", verdana, sans-serif;
+      font-size: 8px;
+      font-weight: normal;
+      background-color: #FFFFFF;
+      color: #000000;
+      text-align: left;
+      padding-right: 8;
+      padding-left: 8;
+      width: 15%;
+}
+
+.RuleExceptionTitle
+   {
+      font-family: helvetica, arial, "MS Sans Serif", verdana, sans-serif;
+      font-size: 8px;
+      font-weight: normal;
+      background-color: #FFFFFF;
+      color: #415D72;
+      white-space: nowrap;
+      text-align: left;
+      padding-right: 8;
+      padding-left: 8;
+}
+
+.RuleExceptionTitleRight
+   {
+      font-family: helvetica, arial, "MS Sans Serif", verdana, sans-serif;
+      font-size: 8px;
+      font-weight: normal;
+      background-color: #FFFFFF;
+      color: #415D72;
+      white-space: nowrap;
+      text-align: right;
+      padding-right: 8;
+      padding-left: 8;
+}
+
+.RuleExceptionData
+   {
+      font-family: "arial,MS Sans Serif", verdana, helvetica, sans-serif;
+      font-size: 8px;
+      font-weight: normal;
+      background-color: #FFFFFF;
+      color: #000000;
+      white-space: nowrap;
+      text-align: left;
+      padding-right: 8;
+      padding-left: 8;
+}
+
+.RequirementTextTitle
+   {
+      font-family: helvetica, arial, "MS Sans Serif", verdana, sans-serif;
+      font-size: 8px;
+      font-weight: bold;
+      color: #5C798F; /*C.1a was 660000*/
+      background-color: #efefef;
+      white-space: nowrap;
+      text-align: right;
+      padding-right: 8;
+      padding-left: 8;
+      width: 3%;
+}
+
+.RequirementText
+   {
+      font-family: helvetica, arial, "MS Sans Serif", verdana, sans-serif;
+      font-size: 8px;
+      font-weight: normal;
+      color: #5C798F; /*C.1a was 660000*/
+      background-color: #efefef;
+      text-align: left;
+      padding-right: 8;
+      padding-left: 8;
+      width: 15%;
+}
+
+.NoncourseDataLabel
+   {
+      font-family: helvetica, arial, "MS Sans Serif", verdana, sans-serif;
+      font-size: 8px;
+      font-weight: bold;
+      background-color: #FFFFFF;
+      color: #000000;
+      white-space: nowrap;
+      text-align: left;
+      padding-right: 8;
+      padding-left: 0;
+      width: 10%;
+}
+
+.NoncourseDataCode
+   {
+      font-family: helvetica, arial, Tahoma, verdana, sans-serif;
+      font-size: 8px;
+      font-weight: normal;
+      background-color: #FFFFFF;
+      color: #000000;
+      white-space: nowrap;
+      text-align: left;
+      padding-right: 8;
+      padding-left: 0;
+      width: 10%;
+}
+
+.NoncourseDataLiteral
+   {
+      font-family: helvetica, arial, Tahoma, verdana, sans-serif;
+      font-size: 8px;
+      font-weight: normal;
+      background-color: #FFFFFF;
+      color: #000000;
+      white-space: nowrap;
+      text-align: left;
+      padding-right: 8;
+      padding-left: 0;
+      width: 30%;
+}
+
+.CourseAppliedDataDiscNum
+   {
+      font-family: helvetica, arial, Tahoma, verdana, sans-serif;
+      font-size: 8px;
+      font-weight: bold;
+      background-color: #FFFFFF;
+      color: #000000;
+      white-space: nowrap;
+      text-align: left;
+      padding-right: 8;
+      padding-left: 0;
+      width: 10%;
+}
+
+.CourseAppliedDataTitle
+   {
+      font-family: helvetica, arial, Tahoma, verdana, sans-serif;
+      font-size: 8px;
+      font-weight: normal;
+      /*font-style:  italic; */
+      background-color: #FFFFFF;
+      color: #000000;
+      white-space: nowrap;
+      text-align: left;
+      padding-right: 8;
+      padding-left: 0;
+      width: 20%;
+}
+
+.CourseAppliedDataGrade
+   {
+      font-family: helvetica, arial, Tahoma, verdana, sans-serif;
+      font-size: 8px;
+      font-weight: normal;
+      background-color: #FFFFFF;
+      color: #000000;
+      white-space: nowrap;
+      text-align: left;
+      padding-right: 8;
+      padding-left: 0;
+      width: 5%;
+}
+
+.CourseAppliedDataCredits
+   {
+      font-family: helvetica, arial, Tahoma, verdana, sans-serif;
+      font-size: 8px;
+      font-weight: normal;
+      background-color: #FFFFFF;
+      color: #000000;
+      white-space: nowrap;
+      text-align: left;
+      padding-right: 8;
+      padding-left: 0;
+      width: 5%;
+}
+
+.CourseAppliedDataTerm
+   {
+      font-family: helvetica, arial, Tahoma, verdana, sans-serif;
+      font-size: 8px;
+      font-weight: normal;
+      background-color: #FFFFFF;
+      color: #000000;
+      white-space: nowrap;
+      text-align: left;
+      padding-right: 8;
+      padding-left: 0;
+      width: 10%;
+}
+
+.CourseAppliedDataSatisfiedBy
+   {
+      font-family: helvetica, arial, Tahoma, verdana, helvetica, arial, sans-serif;
+      font-size: 8px;
+      font-weight: bold;
+      background-color: #FFFFFF;
+      color: #000000;
+      white-space: nowrap;
+      text-align: left;
+      padding-right: 8;
+      padding-left: 8;
+      width: 20%;
+      line-height: 10px;
+}
+
+.CourseTransferData
+   {
+      font-family: helvetica, arial, Tahoma, verdana, helvetica, arial, sans-serif;
+      font-size: 8px;
+      font-weight: normal;
+      background-color: #FFFFFF;
+      color: #000000;
+      white-space: nowrap;
+      text-align: left;
+      line-height: 10px;
+}
+
+.TableHead
+   {
+      background-color: #666666;
+}
+
+.SectionTableTitle
+   {
+      font-family: helvetica, arial, serif;
+      font-size: 8px;
+      color: #FFFFFF;
+      font-weight: bold;
+}
+
+.SectionTableSubTitle
+   {
+      font-family: helvetica, arial, "MS Sans Serif", verdana, sans-serif;
+      font-size: 8px;
+      font-weight: bold;
+      color: #FFFFFF;
+      white-space: nowrap;
+      text-align: right;
+      padding-right: 8;
+      padding-left: 0;
+}
+
+.SectionTableSubData
+   {
+      font-family: helvetica, arial, "MS Sans Serif", verdana, sans-serif;
+      font-size: 8px;
+      font-weight: normal;
+      color: #FFFFFF;
+      white-space: nowrap;
+      text-align: left;
+      padding-left: 0;
+      padding-right: 8;
+}
+
+.AuditErrorLabel
+   {
+      font-family: helvetica, arial, "MS Sans Serif", verdana, sans-serif;
+      font-size: 8px;
+      font-weight: bold;
+      background-color: #FFFFFF;
+      color: red;
+      text-align: left;
+      padding-right: 8;
+      padding-left: 8;
+      width: 20%;
+}
+
+.NotesTitle
+   {
+      font-family: helvetica, arial, "MS Sans Serif", verdana, sans-serif;
+      font-size: 8px;
+      font-weight: bold;
+      color: #5C798F; /*C.1a was 660000*/
+      background-color: #efefef;
+      white-space: nowrap;
+      width: 1%;
+      text-align: left;
+      padding-right: 8;
+      padding-left: 8;
+}
+
+.NotesSubTitle
+   {
+      font-family: helvetica, arial, "MS Sans Serif", verdana, sans-serif;
+      font-size: 8px;
+      font-weight: bold;
+      color: #5C798F; /*C.1a was 660000*/
+      background-color: #efefef;
+      white-space: nowrap;
+      width: 1%;
+      text-align: left;
+      padding-right: 8;
+      padding-left: 8;
+}
+
+.NotesDataText
+   {
+      font-family: helvetica, arial, "MS Sans Serif", verdana, sans-serif;
+      font-size: 8px;
+      font-weight: normal;
+      color: #000000;
+      background-color: #FFFFFF;
+      width: 20%;
+      text-align: left;
+      padding-left: 8;
+      padding-right: 30;
+}
+
+.NotesDataWho
+   {
+      font-family: helvetica, arial, "MS Sans Serif", verdana, sans-serif;
+      font-size: 8px;
+      font-weight: normal;
+      color: #000000;
+      background-color: #FFFFFF;
+      width: 10%;
+      text-align: left;
+      padding-left: 8;
+      padding-right: 30;
+}
+
+.NotesDataWhen
+   {
+      font-family: helvetica, arial, "MS Sans Serif", verdana, sans-serif;
+      font-size: 8px;
+      font-weight: normal;
+      color: #000000;
+      background-color: #FFFFFF;
+      width: 5%;
+      text-align: left;
+      padding-left: 8;
+      padding-right: 30;
+}
+
+.LegendTitle
+   {
+      font-family: helvetica, arial, "MS Sans Serif", verdana, sans-serif;
+      font-size: 8pt;
+      font-weight: bold;
+      color: #FFFFFF;
+      background-color: #5C798F; /*C.1a was 660000*/
+      white-space: nowrap;
+      width: 100%;
+      text-align: left;
+      padding-left: 2px;
+      padding-right: 10px;
+}
+
+.DisclaimerTitle
+   {
+      font-family: helvetica, arial, "MS Sans Serif", verdana, sans-serif;
+      font-size: 8pt;
+      font-weight: bold;
+      color: #FFFFFF;
+      background-color: #5C798F; /*C.1a was 660000*/
+      white-space: nowrap;
+      width: 100%;
+      text-align: left;
+      padding-left: 2;
+      padding-right: 10;
+}
+
+.DisclaimerText
+   {
+      font-family: helvetica, arial, "MS Sans Serif", verdana, sans-serif;
+      font-size: 8pt;
+      font-weight: bold;
+      color: #5C798F; /*C.1a was 660000*/
+      background-color: #efefef;
+      text-align: left;
+      padding-left: 8px;
+      padding-right: 8px;
+}
+
+.SOCStuHeadPrivacy
+   {
+      font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+      font-size: 6pt;
+      color: #415D72;
+      font-weight: bold;
+      background-color: #FFFFFF;
+}
+
+.SOCMoreInformationData
+   {
+      font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+      font-size: 6pt;
+      color: #415D72;
+      font-weight: normal;
+      background-color: #FFFFFF;
+      padding-left: 8px;
+      padding-right: 8px;
+}
+
+.SOCStuTableTitle
+   {
+      font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+      font-size: 8pt;
+      font-weight: bold;
+      color: #415D72; /*C.1a was 660000*/
+      background-color: #efefef;
+      white-space: nowrap;
+      width: 3%;
+      text-align: left;
+      padding-left: 8px;
+      padding-right: 8px;
+}
+
+.SOCStuTableData
+   {
+      font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+      font-weight: normal;
+      color: #000000;
+      background-color: #FFFFFF;
+      XXwidth: 15%;
+      text-align: left;
+      padding-left: 8px;
+      padding-right: 8px;
+}
+
+.SOCTopColumnHeader
+   {
+      font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+      background-color: #efefef;
+      color: #415D72;
+      text-align: center;
+      font-size: 9pt;
+      padding-top: 4px;
+      padding-bottom: 4px;
+      padding-left: 8px;
+      padding-right: 8px;
+}
+
+.SOC_CourseNumber_Header
+   {
+      font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+      background-color: #FFFFFF;
+      color: #415D72;
+      text-align: left;
+      font-size: 8pt;
+      font-weight: bold;
+      width: 10%;
+      padding-left: 2px;
+      padding-right: 2px;
+}
+
+.SOC_CourseTitle_Header
+   {
+      font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+      background-color: #FFFFFF;
+      color: #415D72;
+      text-align: left;
+      font-weight: bold;
+      font-size: 8pt;
+      width: 39%;
+      padding-left: 2px;
+      padding-right: 2px;
+}
+
+.SOC_RequiredHours_Header
+   {
+      font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+      background-color: #FFFFFF;
+      color: #415D72;
+      text-align: center;
+      font-weight: bold;
+      font-size: 8pt;
+      width: 1%;
+      padding-left: 2px;
+      padding-right: 2px;
+}
+
+.SOC_AwardedHours_Header
+   {
+      font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+      background-color: #FFFFFF;
+      color: #415D72;
+      text-align: center;
+      font-weight: normal;
+      font-size: 8pt;
+      width: 50px;
+      padding-left: 2px;
+      padding-right: 2px;
+}
+
+.SOC_HoursNeeded_Header
+   {
+      font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+      background-color: #FFFFFF;
+      color: #415D72;
+      text-align: center;
+      font-weight: bold;
+      font-size: 8pt;
+      xwidth: 20px;
+      padding-left: 2px;
+      padding-right: 2px;
+}
+
+.SOC_CourseCat_Header
+   {
+      font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+      background-color: #FFFFFF;
+      color: #415D72;
+      text-align: center;
+      font-weight: bold;
+      font-size: 8pt;
+      xwidth: 20px;
+      padding-left: 2px;
+      padding-right: 2px;
+}
+
+.SOC_Notes_Header
+   {
+      font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+      background-color: #FFFFFF;
+      color: #415D72;
+      text-align: center;
+      font-weight: normal;
+      font-size: 8pt;
+      xwidth: 20px;
+      padding-left: 2px;
+      padding-right: 2px;
+}
+
+.SOC_CourseNumber_Data
+   {
+      font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+      background-color: #FFFFFF;
+      color: #415D72;
+      text-align: left;
+      font-size: 8pt;
+      font-weight: bold;
+      width: 10%;
+      padding-left: 2px;
+      padding-right: 2px;
+}
+
+.SOC_CourseTitle_Data
+   {
+      font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+      background-color: #FFFFFF;
+      color: #415D72;
+      text-align: left;
+      font-weight: bold;
+      font-size: 8pt;
+      width: 39%;
+      padding-left: 2px;
+      padding-right: 2px;
+}
+
+.SOC_RequiredHours_Data
+   {
+      font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+      background-color: #FFFFFF;
+      color: #415D72;
+      text-align: center;
+      font-weight: bold;
+      font-size: 8pt;
+      width: 1%;
+      padding-left: 2px;
+      padding-right: 2px;
+}
+
+.SOC_AwardedHours_Data
+   {
+      font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+      background-color: #FFFFFF;
+      color: #415D72;
+      text-align: center;
+      font-weight: normal;
+      font-size: 8pt;
+      width: 50px;
+      padding-left: 2px;
+      padding-right: 2px;
+}
+
+.SOC_HoursNeeded_Data
+   {
+      font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+      background-color: #FFFFFF;
+      color: #415D72;
+      text-align: center;
+      font-weight: bold;
+      font-size: 8pt;
+      xwidth: 20px;
+      padding-left: 2px;
+      padding-right: 2px;
+}
+
+.SOC_CourseCat_Data
+   {
+      font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+      background-color: #FFFFFF;
+      color: #415D72;
+      text-align: center;
+      font-weight: bold;
+      font-size: 8pt;
+      xwidth: 20px;
+      padding-left: 2px;
+      padding-right: 2px;
+}
+
+.SOC_Notes_Data
+   {
+      font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+      background-color: #FFFFFF;
+      color: #415D72;
+      text-align: center;
+      font-weight: normal;
+      font-size: 8pt;
+      xwidth: 20px;
+      padding-left: 2px;
+      padding-right: 2px;
+}
+
+.SOC_CourseNumber_Total
+   {
+      font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+      background-color: #efefef;
+      color: #415D72;
+      text-align: left;
+      font-size: 8pt;
+      font-weight: bold;
+      width: 10%;
+      padding-left: 2px;
+      padding-right: 2px;
+}
+
+.SOC_CourseTitle_Total
+   {
+      font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+      background-color: #efefef;
+      color: #415D72;
+      text-align: left;
+      font-weight: bold;
+      font-size: 8pt;
+      width: 39%;
+      padding-left: 2px;
+      padding-right: 2px;
+}
+
+.SOC_RequiredHours_Total
+   {
+      font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+      background-color: #efefef;
+      color: #415D72;
+      text-align: center;
+      font-weight: bold;
+      font-size: 8pt;
+      width: 1%;
+      padding-left: 2px;
+      padding-right: 2px;
+}
+
+.SOC_AwardedHours_Total
+   {
+      font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+      background-color: #efefef;
+      color: #415D72;
+      text-align: center;
+      font-weight: normal;
+      font-size: 8pt;
+      width: 50px;
+      padding-left: 2px;
+      padding-right: 2px;
+}
+
+.SOC_HoursNeeded_Total
+   {
+      font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+      background-color: #efefef;
+      color: #415D72;
+      text-align: center;
+      font-weight: bold;
+      font-size: 8pt;
+      xwidth: 20px;
+      padding-left: 2px;
+      padding-right: 2px;
+}
+
+.SOC_CourseCat_Total
+   {
+      font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+      background-color: #efefef;
+      color: #415D72;
+      text-align: center;
+      font-weight: bold;
+      font-size: 8pt;
+      xwidth: 20px;
+      padding-left: 2px;
+      padding-right: 2px;
+}
+
+.SOC_Notes_Total
+   {
+      font-family: Tahoma, "MS Sans Serif", verdana, arial, helvetica, sans-serif;
+      background-color: #efefef;
+      color: #415D72;
+      text-align: center;
+      font-weight: normal;
+      font-size: 8pt;
+      xwidth: 20px;
+      padding-left: 2px;
+      padding-right: 2px;
+}
+}
+
+/* end media */

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>ZotPlanner</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="css/jquery.weekcalendar.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="http://www.reg.uci.edu/css/webreg.css" type="text/css" title="WebReg Styles">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    <script src="js/jquery.weekcalendar.js"></script>
+    <script src="js/antplanner2.js"></script>
+    <script src="js/main.js"></script>
+  
+  </head>
+  <body style="overflow:hidden;">
+    <div id="login-modal" style="position:absolute; top:30px; left:10px; z-index: 1200; border:2px solid; display:none;">
+      <div id="webauth-container">
+        <!-- UCI Header Information -->
+        <div id="header">&nbsp;</div>
+        <!-- Title Bar that allows for custom headings for departments and organizations. Optional-->
+        <div id="title-bar">
+          <div id="application-title">UCInetID Secure Web Login</div>
+          <div id="login-status"></div>
+          <div class="clearer">
+            <!-- -->
+          </div>
+        </div>
+        <div id="content-container">
+          <!-- Login Box -->
+          <div id="login-area" style="float:inherit; margin: 0 auto;">
+            <div id="webauth_login_form_id" name="webauth_login_form">
+              <ul id="login-form">
+                <li>
+                  <label for="ucinetid">UCInetID</label>
+                  <input name="ucinetid" type="text" accesskey="1" tabindex="1" maxlength="64" id="ucinetid">
+                  <div class="example">UCInetID Example: ptanteater</div>
+                  <div class="clearer">
+                    <!-- -->
+                  </div>
+                </li>
+                <li>
+                  <label for="password">Password</label>
+                  <input name="password" type="password" accesskey="2" tabindex="2" id="password">
+                  <br>
+                  <div class="clearer">
+                    <!-- -->
+                  </div>
+                </li>
+                <li>
+                  <p class="login-error" style="color:red;">
+                  <p>
+                </li>
+                <li class="button-bar">
+                  <span id="login_button_span"><input type="button" id="login" name="login_button" value="Login" accesskey="3" tabindex="3">
+                  </span>
+                  <span id="login_status_span" style="visibility: hidden;">Logging in...</span>
+                  <span id="login_image_span" style="visibility: hidden;">
+                    <!--img id="logging_in_img" src="images/webauth_kitt.gif" alt=". . . . ."-->
+                  </span>
+                </li>
+              </ul>
+              <div class="clearer">
+                <!-- -->
+              </div>
+            </div>
+            <span id="forgot-password"></span>
+            <p id="privacy-warning"><strong>WARNING! Protect your privacy. Logout when you are done and completely exit your browser. </strong>
+            </p>
+          </div>
+          <!-- Information area. Including News Items, Custom Links for Department/Organization and General UCInetID Information. -->
+          <div class="clearer">
+            <!-- -->
+          </div>
+          <div id="main_bottom_edge">&nbsp;</div>
+        </div>
+        <!-- Footer Information. Includes Webauth and OIT Links -->
+        <div id="footer">
+          <p class="smalltext-footer">Powered by WebAuth, Developed by <a href="http://brettjsettle.site" target="_blank">Brett S.</a>.</p>
+          <p class="smalltext-footer"><a href="http://security.uci.edu" target="_blank">Computing Security &amp; Resources</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="left">
+      <div id="upper">
+        <div id="main-nav">
+          <input type="button" id="toggleLogin" onclick="toggleLogin();" value="Login">
+          <h1>New Antplanner</h1>
+          <!--a target="_blank" href="https://github.com/gumho/antplanner2/wiki/AntPlanner-FAQ">?</a-->
+        </div>
+        <div id="cal-ctrl">
+          <button type="button" class="btn" id="degreeworks-button" onclick="toggleDegreeWorks();">DegreeWorks</button>
+          <!--button type="button" class="btn" onclick="javascript:print()">Print</button-->
+          <button type="button" class="btn" id="webreg-button">WebReg</button>
+          <button type="button" id="save-btn" class="btn">Save</button>
+          <button type="button" id="load-btn" class="btn">Load</button>
+          <button type="button" id="clear-cal-btn" class="btn">Clear</button>
+          <button type="button" id="resize-btn" class="btn">Size</button>
+        </div>
+      </div>
+      <div id="lower" style="position:relative;">
+        <div id="cal">
+        </div>
+        <div id="degreeworks" style="position:absolute; width:100%; height:100%; background-color:white; z-index:1000; background-color:white; top: 0; display:none;">
+          <iframe id="degreeworks-response" style="display:inline; width:100%; height:100%;"></iframe>
+        </div>
+      </div>
+    </div>
+    <div id="right">
+      <div id="webreg" style="position:absolute; top:0; height: 100%; display:none; background:white; width: inherit; padding:10px">
+        <p style="
+    border: 2px red solid;
+    padding: 10px;
+    width: inherit;
+    margin: 20px auto;
+    background: yellow;
+    display: block;"><b>DISCLAIMER</b><br>This tool logs into WebReg, submits your request, and logs out each time you make a request.
+	You MUST sign up for all co-requisites of a course simultaneously.<br><br>
+	Organize your classes in the calendar FIRST, then click them to add them to a request (click again to remove). Once you have all your courses, click submit.<br>
+	<br>This tool has NOT been tested in depth, use your Study List to ensure course registration was successful. </p>
+	<form style="margin: 40px 0px 0px 0px;" id="registerForm">
+          <table cellpadding="3" cellspacing="0" align="center" border="0" style="margin:0 auto;">
+            <tbody>
+              <tr>
+                <td colspan="3" align="center">
+                  <table id="regRow" width="600" border="1" bgcolor="#ddeeff" align="center" cellpadding="5" cellspacing="0" style="border-color: #083194; white-space: nowrap;">
+                    <tbody>
+                      <tr>
+                        <td align="center" valign="middle">
+                          <font size="3" color="#083194">Request</font>
+                        </td>
+                        <td align="center" valign="middle">
+                          <font size="3" color="#083194">Course&nbsp;Code(s)</font>
+                        </td>
+                        <td align="center" valign="middle" bgcolor="#d5e5ff">
+                          <font size="3" color="#083194">Grade&nbsp;Option</font>
+                        </td>
+                        <td align="center" valign="middle" bgcolor="#d5e5ff">
+                          <font size="3" color="#083194">Variable&nbsp;Units</font>
+                        </td>
+                        <td align="center" valign="middle" bgcolor="#d5e5ff">
+                          <font size="3" color="#083194">Authorization&nbsp;Code</font>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="left" valign="middle" style="border-right: 0;">
+                          <input type="radio" name="mode" value="add" id="add" checked>
+                          <label for="add"><font size="3">Add</font>
+                          </label>
+                          <br>
+                          <input type="radio" name="mode" value="change" id="change">
+                          <label for="change"><font size="3">Change</font>
+                          </label>
+                          <br>
+                          <input type="radio" name="mode" value="drop" id="drop">
+                          <label for="drop"><font size="3">Drop</font>
+                          </label>
+                        </td>
+                        <td align="center" valign="middle" style="border-left: 0;">
+                          <input id="codeEntry" placeholder="Code" style="width:60px;"/>
+			  <input type="button" id="addEntryCode" onclick='addRegCode($("#codeEntry").val()); $("#codeEntry").val("")' value="Add"/> <br> 
+			  <select id="courseCodes" name="courseCode" size="5" maxlength="5" style="width:100px" multiple>
+                          </select>
+                        </td>
+                        <td align="center" valign="middle" bgcolor="#d5e5ff">
+                          <input type="text" name="gradeOption" size="1" maxlength="1">
+                          <font size="2">1=Grade,&nbsp;2=P/NP</font>
+                        </td>
+                        <td align="center" valign="middle" bgcolor="#d5e5ff">
+                          <input type="text" name="varUnits" size="2" maxlength="2">
+                        </td>
+                        <td align="center" valign="middle" bgcolor="#d5e5ff">
+                          <input type="text" name="authCode" size="4" maxlength="4">
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="left" valign="middle" style="border-right: 0;">
+                        </td>
+                        <td align="center" valign="middle" style="border-left: 0;">
+                        </td>
+                        <td colspan="3" align="center">
+                          <input type="button" value="Send Request" id="sendRequest" class="action" style="margin: 5px;">
+                          <input type="button" value="Study List" id="studyList" class="action">
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+              </tr>
+            </tbody>
+          </table>
+        </form>
+        <div class="col" id="registerMessage" style="width:85%; margin:20px auto;">
+        </div>
+      </div>
+      <div id="websoc-search" style="width: 90%; margin: 10px auto;">
+      </div>
+      <div class="course-list" style="padding:5px">
+        <table style="width:100%; font:initial;">
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
