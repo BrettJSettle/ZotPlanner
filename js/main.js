@@ -15,17 +15,9 @@ function toggleLogin() {
 }
 
 function get_listings(ev) {
-    var dept = document.getElementsByName("Dept")[0].value;
-    var breadth = document.getElementsByName("Breadth")[0].value;
-    var yearTerm = document.getElementsByName("YearTerm")[0].value;
-    var courseNum = document.getElementsByName("CourseNum")[0].value;
-    show_listings({
-        "mode": "search",
-        "Breadth": breadth,
-        "Dept": dept,
-        "YearTerm": yearTerm,
-        "CourseNum": courseNum
-    });
+    let data = {mode: 'search'}
+    $("#websoc-form").serializeArray().map(function(v) { data[v.name] =v.value;} )
+    show_listings(data)
 }
 
 function toggleDegreeWorks() {
@@ -60,7 +52,7 @@ function show_listings(data) {
     }
 
     $("#search-message")[0].innerHTML = "Loading";
-    var posting = $.post("/cgi-bin/search.py", data);
+    var posting = $.post("/cgi-bin/zotplanner/search.py", data);
     posting.done(function(data) {
         if (data.search("ERROR:") >= 0) {
             $("#search-message")[0].innerHTML = data.substr(7);
@@ -87,7 +79,7 @@ function show_listings(data) {
 }
 
 function get_search() {
-    var posting = $.post("/cgi-bin/search.py", {
+    var posting = $.post("/cgi-bin/zotplanner/search.py", {
         "mode": "load"
     });
     posting.done(function(data) {
@@ -217,7 +209,7 @@ function degreeworks(data) {
         $("#degreeworks-button")[0].disabled = false;
         return;
     }
-    var posting = $.post("/cgi-bin/webauth.py", data);
+    var posting = $.post("/cgi-bin/zotplanner/webauth.py", data);
     posting.done(function(data) {
         $("#degreeworks-button")[0].disabled = false;
         if (data.startsWith("ERROR")) {
@@ -239,7 +231,8 @@ function degreeworks(data) {
 function connectDW() {
     var doc = $("#degreeworks-response").contents();
     $("span, td.courseapplieddatadiscnum", doc).on("click", function(ev) {
-        var disc = this.getAttribute("disc"),
+        
+	var disc = this.getAttribute("disc"),
             num = this.getAttribute("num");
         var yearTerm = document.getElementsByName("YearTerm")[0].value;
         show_listings({
@@ -248,7 +241,6 @@ function connectDW() {
             "CourseNum": num,
             "YearTerm": yearTerm
         });
-        ev.stopPropagation();
     });
 
     $("tr.bgLight100, tr.bgLight0, tr.bgLight98, tr.bgLight99", doc).on("click", function(ev) {
@@ -363,7 +355,7 @@ $(document).ready(function() {
         }
 
         data.submit = event.target.value;
-        var posting = $.post("/cgi-bin/register.py", data);
+        var posting = $.post("/cgi-bin/zotplanner/register.py", data);
         posting.done(function(data) {
             registerMessage(data);
             $(".action").attr("disabled", null);
@@ -388,7 +380,7 @@ $(document).ready(function() {
 
         // Save to server
         $.ajax({
-            url: "/cgi-bin/schedule.py",
+            url: "/cgi-bin/zotplanner/schedule.py",
             type: "post",
             data: {
                 username: username,
@@ -414,7 +406,7 @@ $(document).ready(function() {
         }
 
         $.ajax({
-            url: "/cgi-bin/schedule.py",
+            url: "/cgi-bin/zotplanner/schedule.py",
             data: {
                 username: username
             },
@@ -476,7 +468,7 @@ $(document).ready(function() {
             "password": password,
             mode: "Login"
         }
-        var posting = $.post("/cgi-bin/webauth.py", data);
+        var posting = $.post("/cgi-bin/zotplanner/webauth.py", data);
         posting.done(function(data) {
             $("#login_status_span")[0].style["visibility"] = "hidden";
             if (data.search("ERROR") == -1) {
